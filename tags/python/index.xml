@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kwazii.top</title>
-    <link>https://kwazii.top/</link>
-    <description>Recent content on Kwazii.top</description>
+    <title>python on Kwazii.top</title>
+    <link>https://kwazii.top/tags/python/</link>
+    <description>Recent content in python on Kwazii.top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 May 2022 14:18:57 +0800</lastBuildDate><atom:link href="https://kwazii.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 May 2022 14:18:57 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>第一章 第1课 编程环境搭建</title>
       <link>https://kwazii.top/kids/python/chapter-1/</link>
@@ -41,21 +41,6 @@
 交互模式的提示符是 &amp;gt; &amp;gt; &amp;gt;，脚本模式没有提示符。
   IDLE的基本操作和常用快捷键
  新建文件 打开文件 保存文件 运行（脚本） 替换 &amp;hellip;  基本的操作是我们每天的编程中最常用的功能，熟练掌握他们的快捷键可以大大提高我们的效率。（注意不同操作系统快捷键不尽相同）</description>
-    </item>
-    
-    <item>
-      <title>关于作者</title>
-      <link>https://kwazii.top/about/</link>
-      <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kwazii.top/about/</guid>
-      <description>大家好，我是Kwazii
-一位从事编程工作十余载，所谓的全栈程序员。
-功力不深，涉猎广泛。
-机缘巧合想输出一些内容，但愿能影响个三两人足以。
-联系交流 微信：
-邮箱: gloomyzerg@gmail.com
-我的 GitHub.</description>
     </item>
     
   </channel>

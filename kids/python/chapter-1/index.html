@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    
+    
+    <title>Kwazii.top | 第一章 第1课 编程环境搭建</title>
+    <style>
+img{
+	max-width: 80vw;
+}
+</style>
+
+</head>
+<body>
+
+
+<h1>第一章 第1课 编程环境搭建</h1>
+
+
+  
+  <p>作者： <a href="/about/">Kwazii</a></p>
+
+
+
+  
+  
+
+  <p>2022-05-31</p>
+
+
+
+
+
+
+<aside>
+    <header>
+    <h2>第一章 第1课 编程环境搭建</h2>
+    </header>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#课前准备">课前准备</a>
+      <ul>
+        <li><a href="#搭建python编程环境">搭建Python编程环境</a></li>
+      </ul>
+    </li>
+    <li><a href="#本节目标">本节目标</a>
+      <ul>
+        <li><a href="#了解python的集成开发环境ide">了解Python的集成开发环境（IDE）</a></li>
+        <li><a href="#掌握idle的两种模式">掌握IDLE的两种模式</a></li>
+        <li><a href="#python的版本仅需了解">Python的版本（仅需了解）</a></li>
+        <li><a href="#python的语言特性仅需了解">Python的语言特性（仅需了解）</a></li>
+        <li><a href="#代码缩进">代码缩进</a></li>
+        <li><a href="#代码注释">代码注释</a></li>
+        <li><a href="#写下你的第一行代码">写下你的第一行代码</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结回顾">总结回顾</a></li>
+    <li><a href="#本节作业">本节作业</a></li>
+  </ul>
+</nav>
+</aside>
+
+
+
+<h2 id="课前准备">课前准备</h2>
+<h3 id="搭建python编程环境">搭建Python编程环境</h3>
+<ol>
+<li>
+<p>下载Python
+在电脑浏览器中打开Python官网<a href="https://www.python.org/">https://www.python.org/</a></p>
+<p>点击下图中红框中按钮即可现在最新的python安装包
+(由于使用的操作系统不同，页面显示可能不完全一致，Python的版本也可能和图中不一致，此课程当前使用的版本为3.10.4，但不影响此课程学习。)</p>
+<p><img src="/image/kids-python/chapter-1-01.jpg" alt="01"></p>
+</li>
+<li>
+<p>安装Python</p>
+<p>双击刚才下载的安装包进行安装，如图所示</p>
+<p>打开安装包后会看到此窗口，注意先勾选下方红框Add Python 3.10 to PATH，然后点击上方红框Install Now进行安装</p>
+<p><img src="/image/kids-python/chapter-1-02.jpg" alt="02"></p>
+<p>耐心等待，看到如下图的提示说明安装完成，点击close关闭即可</p>
+<p><img src="/image/kids-python/chapter-1-03.jpg" alt="03"></p>
+</li>
+<li>
+<p>打开并检查Python是否安装成功</p>
+<p>完成上述步骤之后，在键盘上按win+r键打开运行，输入cmd，点击确定，如下图所示</p>
+<p><img src="/image/kids-python/chapter-1-04.jpg" alt=""></p>
+<p>将会打开命令行窗口，输入python回车，如果看到如下图显示则说明pyhton已安装成功</p>
+<p><img src="/image/kids-python/chapter-1-05.jpg" alt=""></p>
+<p>接下来我们找到启动python的入口</p>
+<p>以windows系统为例，点击桌面左下方开始图标，在其中找到Python文件夹，点击其中IDLE，你将会看到Python IDLE窗口，如下图</p>
+<p><img src="/image/kids-python/chapter-1-06.jpg" alt=""></p>
+<p><img src="/image/kids-python/chapter-1-07.jpg" alt=""></p>
+<p>到此Python编程环境的安装就已经全部完成了，再次说明由于操作系统或安装日期的不同，所显示的内容可能不完全和以上图中一致。但只要流程相同均不影响此课程的学习。</p>
+<p>（因考虑普遍需求，以上操作均已windows操作系统为例。之后本课程的演示均为MacOS系统，如无特殊说明操作流程一致。）</p>
+<p>如安装遇到问题，可以联系我。</p>
+<p>下面我们正式开始Python课程的学习。祝你好运！</p>
+</li>
+</ol>
+<h2 id="本节目标">本节目标</h2>
+<h3 id="了解python的集成开发环境ide">了解Python的集成开发环境（IDE）</h3>
+<ol>
+<li>
+<p>什么是集成开发环境</p>
+<p>集成开发环境简称IDE（Integrated Development Environment），是用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。集成了代码编写功能、分析功能、编译功能、调试功能等一体化的开发软件服务套件。在我们课前准备中，我们已经完成了Python的安装。Python安装之后会自带一个名为IDLE的集成开发环境。</p>
+</li>
+<li>
+<p>Python可用的IDE有那些</p>
+<p>除了Python自带的IDLE之外，常用的IDE和编辑器还有很多。例如VSCode，pycharm， Jupyter Notebook等等。初学者不必纠结使用何种工具，专注于代码本身更为重要。</p>
+</li>
+</ol>
+<h3 id="掌握idle的两种模式">掌握IDLE的两种模式</h3>
+<ol>
+<li>
+<p>IDLE的两种模式</p>
+<p>为了简化开发的复杂性，初学者不必纠结使用的工具。因此对于我们初学者来说使用Python自带的IDLE足以完成我们的学习。</p>
+<p>使用IDLE进行Python开发，首先我们要了解的是IDLE的两种模式。即脚本模式（又称为编辑器模式）和交互模式（又称为Shell模式）</p>
+<p>这两种模式的界面如下图, 左边👈为脚本模式，右边👉为交互模式</p>
+<p><img src="/image/kids-python/chapter-1-08.png" alt=""></p>
+</li>
+<li>
+<p>IDLE两种模式的切换方法</p>
+<p>切换方法：新建文件即可。</p>
+<p>交互模式的提示符是 &gt; &gt; &gt;，脚本模式没有提示符。</p>
+</li>
+<li>
+<p>IDLE的基本操作和常用快捷键</p>
+<ul>
+<li>新建文件</li>
+<li>打开文件</li>
+<li>保存文件</li>
+<li>运行（脚本）</li>
+<li>替换</li>
+<li>&hellip;</li>
+</ul>
+<p>基本的操作是我们每天的编程中最常用的功能，熟练掌握他们的快捷键可以大大提高我们的效率。（注意不同操作系统快捷键不尽相同）</p>
+</li>
+</ol>
+<h3 id="python的版本仅需了解">Python的版本（仅需了解）</h3>
+<ul>
+<li>Python2 和 Python3</li>
+<li>目前最常用的版本是Python3</li>
+<li>两个版本并不完全兼容</li>
+<li>32位和64位</li>
+<li>Python 可以跨平台，跨系统运行</li>
+</ul>
+<h3 id="python的语言特性仅需了解">Python的语言特性（仅需了解）</h3>
+<p>Python是一种解释性、面向对象、动态数据类型的高级程序语言。</p>
+<ul>
+<li>
+<p>解释型、编译型</p>
+<p>解释型语言是相对于编译型语言存在的，解释型语言的源代码不是直接被翻译成机器语言（编译），而是先被翻译成中间代码，再在运行时由解释器对中间代码进行解释，程序每次执行一次都需要翻译一次。</p>
+</li>
+<li>
+<p>动态数据类型、静态数据类型</p>
+<p>变量的数据类型如果不能改变（一般需要提前声明），则是静态数据类型。而如果变量类型可以改变，则是动态数据类型。</p>
+</li>
+</ul>
+<h3 id="代码缩进">代码缩进</h3>
+<ol>
+<li>什么是缩进</li>
+<li>Python对缩进是敏感的</li>
+<li>用代码缩进表示不同的逻辑层</li>
+<li>代码缩进的规则</li>
+</ol>
+<h3 id="代码注释">代码注释</h3>
+<ol>
+<li>什么是注释</li>
+<li>注释的格式</li>
+<li>单行注释</li>
+<li>多行注释</li>
+</ol>
+<h3 id="写下你的第一行代码">写下你的第一行代码</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>print(<span style="color:#e6db74">&#34;hello&#34;</span>);print(<span style="color:#e6db74">&#34;python&#34;</span>)
+
+</code></pre></div><h2 id="总结回顾">总结回顾</h2>
+<p>通过本节课我们搞定了Python开发环境的安装。对Python这门编程语言有了一个最基本的了解。</p>
+<p>学习了Python最基本的语法，写下你的第一行代码。纵然只是最简单的一行代码，但千里之行始于足下，编程对你来说变得不在那么神秘，从此踏上编程的旅程吧。</p>
+<h2 id="本节作业">本节作业</h2>
+<p>待完成</p>
+
+
+
+正文结束
+<hr>
+
+
+
+  <p><strong>相关分类:</strong></p>
+
+  <ul>
+
+  
+  
+  
+  <li><a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></li>
+  
+  
+
+  </ul>
+
+
+
+
+
+  <p><strong>相关标签:</strong></p>
+
+  <ul>
+
+  
+  
+  
+  <li><a href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B">少儿编程</a></li>
+  
+  
+  <li><a href="https://kwazii.top/tags/python">python</a></li>
+  
+  
+
+  </ul>
+
+
+
+
+<p><a name="nav-menu" id="nav-menu"><strong>更多内容</strong></a></p>
+
+<ul>
+    
+    <li>
+      <a href="/categories/">
+      
+      按分类
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/">
+      
+      按标签
+      </a>
+    </li>
+    
+    <li>
+      <a href="/about/">
+      
+      关于作者
+      </a>
+    </li>
+    
+    <li>
+      <a href="/">
+      
+      首页
+      </a>
+    </li>
+    
+</ul>
+
+<p><a href="#">回到顶部</a></p>
+</body>
+</html>
