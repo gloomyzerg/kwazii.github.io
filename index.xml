@@ -7,23 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://kwazii.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
-      <link>https://kwazii.top/test/</link>
-      <pubDate>Tue, 28 Dec 2021 12:35:03 +0800</pubDate>
-      
-      <guid>https://kwazii.top/test/</guid>
-      <description>type Limiter struct{ limit int } </description>
-    </item>
-    
-    <item>
-      <title>About</title>
+      <title>关于作者</title>
       <link>https://kwazii.top/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://kwazii.top/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
- https://github.</description>
+      <description>大家好，我是Kwazii
+一位从事编程工作十余载，所谓的全栈程序员。
+功力不深，涉猎广泛。
+机缘巧合想输出一些内容，但愿能影响个三两人足以。
+联系交流 微信：
+邮箱: gloomyzerg@gmail.com
+我的 GitHub.</description>
     </item>
     
   </channel>
