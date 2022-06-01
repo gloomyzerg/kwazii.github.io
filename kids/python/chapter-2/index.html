@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    
+    
+    <title>Kwazii.top | 第一章 第2课 编程基础</title>
+    <style>
+img{ max-width: 80vw; }
+.highlight{ max-width: 80vw; }
+.highlight pre{ font-size: 16px; background-color: #333333 !important; }
+</style>
+
+</head>
+<body>
+
+
+<h1>第一章 第2课 编程基础</h1>
+
+
+  
+  <p>作者： <a href="/about/">Kwazii</a></p>
+
+
+
+  
+  
+
+  <p>2022-06-01</p>
+
+
+
+
+
+<span class="categories-item"><a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+
+
+
+
+
+
+
+<aside>
+    <header>
+    <h2>第一章 第2课 编程基础</h2>
+    </header>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#本节目标">本节目标</a>
+      <ul>
+        <li><a href="#print函数">print()函数</a></li>
+        <li><a href="#关于引号单引号和双引号三引号">关于引号，单引号和双引号，三引号</a></li>
+        <li><a href="#变量的命名和使用保留字">变量的命名和使用、保留字</a></li>
+        <li><a href="#字符串及数值类型转换">字符串及数值类型转换</a></li>
+        <li><a href="#input函数">input()函数</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结回顾">总结回顾</a></li>
+    <li><a href="#本节作业">本节作业</a></li>
+  </ul>
+</nav>
+</aside>
+
+
+
+<h2 id="本节目标">本节目标</h2>
+<h3 id="print函数">print()函数</h3>
+<ol>
+<li>
+<p>作用：打印输出，在屏幕上显示出要打印的信息</p>
+</li>
+<li>
+<p>用法</p>
+<ul>
+<li>打印字符串</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>print(<span style="color:#e6db74">&#34;hello&#34;</span>)
+
+hello
+
+</code></pre></div><ul>
+<li>打印数字</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>print(<span style="color:#ae81ff">4</span><span style="color:#f92672">+</span><span style="color:#ae81ff">6</span>)
+
+<span style="color:#ae81ff">10</span>
+
+</code></pre></div><ul>
+<li>打印变量</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>coding <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Python3&#34;</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span>print(coding)
+
+Python3
+
+</code></pre></div><ul>
+<li>输出多个内容</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span>a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello&#34;</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span>b <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;world&#34;</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span>print(a, b)
+
+<span style="color:#75715e"># 注意单词之间有空格</span>
+hello world 
+
+</code></pre></div><ul>
+<li>换行</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span>print(<span style="color:#e6db74">&#34;你好&#34;</span>, end <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span>print(<span style="color:#e6db74">&#34;kwazii&#34;</span>)
+
+<span style="color:#75715e"># 运行结果</span>
+你好,kwazii
+
+</code></pre></div><ul>
+<li>多行输出</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>print(<span style="color:#e6db74">&#39;&#39;&#39;
+</span><span style="color:#e6db74">第一行
+</span><span style="color:#e6db74">第二行
+</span><span style="color:#e6db74">第三行
+</span><span style="color:#e6db74">&#39;&#39;&#39;</span>)
+
+第一行
+第二行
+第三行
+
+</code></pre></div><ul>
+<li>转义符</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>print(<span style="color:#e6db74">&#39;I</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">m Kwazii&#39;</span>)
+I<span style="color:#e6db74">&#39;m Kwazii</span>
+
+</code></pre></div></li>
+</ol>
+<h3 id="关于引号单引号和双引号三引号">关于引号，单引号和双引号，三引号</h3>
+<ol>
+<li>
+<p>所有引号必须是英文半角引号</p>
+</li>
+<li>
+<p>单引号和双引号均可包含字符串，但在使用转义时有区别</p>
+</li>
+<li>
+<p>三引号可以包含多行字符串，需注意和注释的区别</p>
+</li>
+</ol>
+<h3 id="变量的命名和使用保留字">变量的命名和使用、保留字</h3>
+<ol>
+<li>
+<p>关于变量</p>
+</li>
+<li>
+<p>变量的命名规则</p>
+<ul>
+<li>
+<p>变量名由大小写字母、数字、下划线等字符串组合</p>
+</li>
+<li>
+<p>变量名必须以字母或下划线开头，不能以数字开头，但下划线开头有特殊的含义</p>
+</li>
+<li>
+<p>变量名中不能有空格或者标点符号（如逗号、顿号、分号、冒号等）</p>
+</li>
+<li>
+<p>不能使用保留字作为变量名</p>
+</li>
+<li>
+<p>变量名大小写敏感</p>
+</li>
+</ul>
+</li>
+<li>
+<p>保留字</p>
+<ul>
+<li>
+<p>共有35个保留字</p>
+</li>
+<li>
+<p>查看方法</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span><span style="color:#f92672">import</span> keyword
+<span style="color:#f92672">&gt;&gt;&gt;</span>keyword<span style="color:#f92672">.</span>kwlist
+
+</code></pre></div><ul>
+<li>
+<p>&lsquo;False&rsquo;, &lsquo;None&rsquo;, &lsquo;True&rsquo;, &lsquo;and&rsquo;, &lsquo;as&rsquo;, &lsquo;assert&rsquo;, &lsquo;async&rsquo;, &lsquo;await&rsquo;, &lsquo;break&rsquo;</p>
+<p>&lsquo;class&rsquo;, &lsquo;continue&rsquo;, &lsquo;def&rsquo;, &lsquo;del&rsquo;, &lsquo;elif&rsquo;, &lsquo;else&rsquo;, &lsquo;except&rsquo;, &lsquo;finally&rsquo;, &lsquo;for&rsquo;</p>
+<p>&lsquo;from&rsquo;, &lsquo;global&rsquo;, &lsquo;if&rsquo;, &lsquo;import&rsquo;, &lsquo;in&rsquo;, &lsquo;is&rsquo;, &lsquo;lambda&rsquo;, &lsquo;nonlocal&rsquo;, &lsquo;not&rsquo;</p>
+<p>&lsquo;or&rsquo;, &lsquo;pass&rsquo;, &lsquo;raise&rsquo;, &lsquo;return&rsquo;, &lsquo;try&rsquo;, &lsquo;while&rsquo;, &lsquo;with&rsquo;, &lsquo;yield&rsquo;</p>
+</li>
+<li>
+<p>命令函数不一定是保留字</p>
+</li>
+</ul>
+</li>
+<li>
+<p>变量类型</p>
+<ul>
+<li>
+<p>数字(Numbers)</p>
+<p>int long float complex</p>
+</li>
+<li>
+<p>字符串(String)</p>
+</li>
+<li>
+<p>布尔</p>
+<p>True False</p>
+</li>
+<li>
+<p>列表(List)</p>
+</li>
+<li>
+<p>元组(Tuple)</p>
+</li>
+<li>
+<p>字典(Dictionary)</p>
+</li>
+<li>
+<p>集合(Set)</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="字符串及数值类型转换">字符串及数值类型转换</h3>
+<ol>
+<li>
+<p>转数字类型</p>
+<ul>
+<li>
+<p>int()</p>
+</li>
+<li>
+<p>float()</p>
+</li>
+<li>
+<p>eval()</p>
+</li>
+</ul>
+</li>
+<li>
+<p>转字符串类型</p>
+<ul>
+<li>str()</li>
+</ul>
+</li>
+<li>
+<p>type()函数</p>
+</li>
+<li>
+<p>字符串类型的基本运算</p>
+<ul>
+<li>
+<p>加法（拼接）</p>
+</li>
+<li>
+<p>乘法</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="input函数">input()函数</h3>
+<ol>
+<li>
+<p>作用：接受一个标准输入数据，返回为字符串类型。</p>
+</li>
+<li>
+<p>用法</p>
+<ul>
+<li>input()函数的参数是提示信息，参数只能是字符串类型</li>
+</ul>
+</li>
+</ol>
+<h2 id="总结回顾">总结回顾</h2>
+<p>本节主要介绍了Python的输入、输出函数，input()、print()，数字和字符串两个基本数据类型和他们之间的转换。同时了解了编程中最重要的一个概念&ndash;变量。变量在程序中无处不在，有了变量我们就可以将需要使用的数据临时存放起来，进行后续的处理和输出。</p>
+<h2 id="本节作业">本节作业</h2>
+<ul>
+<li>
+<p>选择题</p>
+<ol>
+<li>在Python中，下列哪个函数用于输出内容到终端？（）</li>
+</ol>
+<ul>
+<li>A. print()</li>
+<li>B. output()</li>
+<li>C. import()</li>
+<li>D. each()</li>
+</ul>
+<ol start="2">
+<li>print(6+8/2)输出的结果是（）</li>
+</ol>
+<ul>
+<li>A. 7</li>
+<li>B. 10.0</li>
+<li>C. 10</li>
+<li>D. 6+8/2</li>
+</ul>
+<ol start="3">
+<li>以下哪个变量命名不符合Python规范（）</li>
+</ol>
+<ul>
+<li>A. 语言=&lsquo;Python&rsquo;</li>
+<li>B. _language=&lsquo;Python&rsquo;</li>
+<li>C. language=&lsquo;Python&rsquo;</li>
+<li>D. .language=&lsquo;Python&rsquo;</li>
+</ul>
+<ol start="4">
+<li>下列哪个不是Pyhton的保留字（）</li>
+</ol>
+<ul>
+<li>A. if</li>
+<li>B. or</li>
+<li>C. turtle</li>
+<li>D. for</li>
+</ul>
+<ol start="5">
+<li>运行下列语句后显示的结果是什么（）</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+b <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> a <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span>
+a <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+print(a, b)
+
+</code></pre></div><ul>
+<li>A. 1, 0.5</li>
+<li>B. 1, 0</li>
+<li>C. 报错</li>
+<li>D. 0, 1</li>
+</ul>
+<ol start="6">
+<li>以下代码运行的结果是（）</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+a <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+print(<span style="color:#e6db74">&#39;a+4&#39;</span>)
+
+</code></pre></div><ul>
+<li>A. 9</li>
+<li>B. &lsquo;a+4&rsquo;</li>
+<li>C. 报错</li>
+<li>D. a+4</li>
+</ul>
+<ol start="7">
+<li>程序：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+a <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;请输入一个数字&#34;</span>)
+b <span style="color:#f92672">=</span> a<span style="color:#f92672">*</span><span style="color:#ae81ff">3</span>
+
+</code></pre></div><p>运行后，如果用户输入的数字是44，那么这时候b的值是什么（）</p>
+<ul>
+<li>A. 44</li>
+<li>B. 444444</li>
+<li>C. 132</li>
+<li>D. 程序报错</li>
+</ul>
+</li>
+<li>
+<p>判断题</p>
+<ol>
+<li>print(&lsquo;I'm ok.)因为有3个单引号，所以程序是错误的。（）</li>
+<li>as、is、class、true 都不可以作为变量名。（）</li>
+</ol>
+</li>
+<li>
+<p>操作题</p>
+<ol>
+<li>输出文字 重要的事情说100遍：安全第一！安全第一！安全第一！&hellip; (共100个安全第一！)</li>
+<li>已知一头奶牛每天可以产20千克牛奶。N（N为变量）头奶牛7天可以产生多少千克的牛奶？要求：
+<ul>
+<li>程序开始后，会有提示：“请输入奶牛的数量：”</li>
+<li>程序根据输入的奶牛数量计算出总共的牛奶重量，并将结果输出</li>
+<li>输出示例：如果输入奶牛的数量为10，则输出 “10头奶牛7天可以产1400千克的牛奶。”</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+
+
+
+正文结束
+<hr>
+
+
+
+  <p><strong>相关分类:</strong></p>
+
+
+  
+  
+  
+  <span class="categories-item"><a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+  
+  
+
+
+
+
+
+
+  <p><strong>相关标签:</strong></p>
+
+
+  
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B">少儿编程</a></span>
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/python">python</a></span>
+  
+  
+
+
+
+
+
+<p><a name="nav-menu" id="nav-menu"><strong>更多内容</strong></a></p>
+
+<ul>
+    
+    <li>
+      <a href="/categories/">
+      
+      按分类
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/">
+      
+      按标签
+      </a>
+    </li>
+    
+    <li>
+      <a href="/about/">
+      
+      关于作者
+      </a>
+    </li>
+    
+    <li>
+      <a href="/">
+      
+      首页
+      </a>
+    </li>
+    
+</ul>
+
+<p><a href="#">回到顶部</a></p>
+</body>
+</html>

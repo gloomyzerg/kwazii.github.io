@@ -6,7 +6,18 @@
     <description>Recent content on Kwazii.top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 May 2022 14:18:57 +0800</lastBuildDate><atom:link href="https://kwazii.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jun 2022 01:25:57 +0800</lastBuildDate><atom:link href="https://kwazii.top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一章 第2课 编程基础</title>
+      <link>https://kwazii.top/kids/python/chapter-2/</link>
+      <pubDate>Wed, 01 Jun 2022 01:25:57 +0800</pubDate>
+      
+      <guid>https://kwazii.top/kids/python/chapter-2/</guid>
+      <description>本节目标 print()函数   作用：打印输出，在屏幕上显示出要打印的信息
+  用法
+ 打印字符串  &amp;gt;&amp;gt;&amp;gt;print(&amp;#34;hello&amp;#34;) hello  打印数字  &amp;gt;&amp;gt;&amp;gt;print(4+6) 10  打印变量  &amp;gt;&amp;gt;&amp;gt;coding = &amp;#34;Python3&amp;#34; &amp;gt;&amp;gt;&amp;gt;print(coding) Python3  输出多个内容  &amp;gt;&amp;gt;&amp;gt;a = &amp;#34;hello&amp;#34; &amp;gt;&amp;gt;&amp;gt;b = &amp;#34;world&amp;#34; &amp;gt;&amp;gt;&amp;gt;print(a, b) # 注意单词之间有空格 hello world  换行  &amp;gt;&amp;gt;&amp;gt;print(&amp;#34;你好&amp;#34;, end =&amp;#34;,&amp;#34;) &amp;gt;&amp;gt;&amp;gt;print(&amp;#34;kwazii&amp;#34;) # 运行结果 你好,kwazii  多行输出  &amp;gt;&amp;gt;&amp;gt;print(&amp;#39;&amp;#39;&amp;#39; 第一行 第二行 第三行 &amp;#39;&amp;#39;&amp;#39;) 第一行 第二行 第三行  转义符  &amp;gt;&amp;gt;&amp;gt;print(&amp;#39;I\&amp;#39;m Kwazii&amp;#39;) I&amp;#39;m Kwazii   关于引号，单引号和双引号，三引号   所有引号必须是英文半角引号</description>
+    </item>
+    
     <item>
       <title>第一章 第1课 编程环境搭建</title>
       <link>https://kwazii.top/kids/python/chapter-1/</link>
