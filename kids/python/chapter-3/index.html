@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    
+    
+    <title>Kwazii.top | 第一章 第3课 运算符</title>
+    <style>
+img{ max-width: 80vw; }
+.highlight{ max-width: 80vw; }
+.highlight pre{ font-size: 16px; background-color: #333333 !important; }
+table{border-top: 1px #333 solid;border-left: 1px #333 solid;border-collapse: collapse;}
+th{background-color: #e1e1e1;}
+th,td{border-bottom: 1px #333 solid;border-right: 1px #333 solid;padding:8px;}
+</style>
+
+</head>
+<body>
+
+
+<h1>第一章 第3课 运算符</h1>
+
+
+  
+  <p>作者： <a href="/about/">Kwazii</a></p>
+
+
+
+  
+  
+
+  <p>2022-06-01</p>
+
+
+
+
+
+<span class="categories-item"><a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+
+
+
+
+
+
+
+<aside>
+    <header>
+    <h2>第一章 第3课 运算符</h2>
+    </header>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#本节目标">本节目标</a>
+      <ul>
+        <li><a href="#算数运算符">算数运算符</a></li>
+        <li><a href="#赋值运算符">赋值运算符</a></li>
+        <li><a href="#比较运算符">比较运算符</a></li>
+        <li><a href="#逻辑运算符">逻辑运算符</a></li>
+        <li><a href="#运算符的优先级">运算符的优先级</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结回顾">总结回顾</a></li>
+    <li><a href="#本节作业">本节作业</a></li>
+  </ul>
+</nav>
+</aside>
+
+
+
+<h2 id="本节目标">本节目标</h2>
+<h3 id="算数运算符">算数运算符</h3>
+<p>与数学运算符的比较</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:center">数学</th>
+<th style="text-align:center">Python</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">加</td>
+<td style="text-align:center">+</td>
+<td style="text-align:center">+</td>
+<td style="text-align:left">把两个对象相加，或拼接字符串</td>
+</tr>
+<tr>
+<td style="text-align:left">减</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:left">把两个对象相减</td>
+</tr>
+<tr>
+<td style="text-align:left">乘</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">*</td>
+<td style="text-align:left">把两个数相乘，或是放回一个被重复若干次的字符串</td>
+</tr>
+<tr>
+<td style="text-align:left">除</td>
+<td style="text-align:center">➗</td>
+<td style="text-align:center">/</td>
+<td style="text-align:left">把两个对象相除，商是小数（能整除也保留一位小数）</td>
+</tr>
+<tr>
+<td style="text-align:left">取整除</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">//</td>
+<td style="text-align:left">取两个数相除的商（整数部分）</td>
+</tr>
+<tr>
+<td style="text-align:left">取模</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">%</td>
+<td style="text-align:left">取两个数相除的余数</td>
+</tr>
+<tr>
+<td style="text-align:left">幂</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">**</td>
+<td style="text-align:left">取x的n次方</td>
+</tr>
+</tbody>
+</table>
+<p>重点：</p>
+<ul>
+<li>
+<p>其中的加和乘可用于字符串类型的运算</p>
+</li>
+<li>
+<p>取整除（//）是向下取整，不是四舍五入, 例如24//5的结果是4，而不是5</p>
+</li>
+<li>
+<p>取模（%）如果能整除，则取模的结果为0</p>
+</li>
+</ul>
+<h3 id="赋值运算符">赋值运算符</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">运算符</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">例子</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">=</td>
+<td style="text-align:left">赋值运算符</td>
+<td style="text-align:left">a = 5</td>
+<td style="text-align:left">把5赋值给变量a</td>
+</tr>
+<tr>
+<td style="text-align:center">+=</td>
+<td style="text-align:left">加法赋值运算符</td>
+<td style="text-align:left">a += b</td>
+<td style="text-align:left">相当于a = a + b</td>
+</tr>
+<tr>
+<td style="text-align:center">-=</td>
+<td style="text-align:left">减法赋值运算符</td>
+<td style="text-align:left">a -= b</td>
+<td style="text-align:left">相当于a = a - b</td>
+</tr>
+<tr>
+<td style="text-align:center">*=</td>
+<td style="text-align:left">乘法赋值运算符</td>
+<td style="text-align:left">a *= b</td>
+<td style="text-align:left">相当于a = a * b</td>
+</tr>
+<tr>
+<td style="text-align:center">/=</td>
+<td style="text-align:left">除法赋值运算符</td>
+<td style="text-align:left">a /= b</td>
+<td style="text-align:left">相当于a = a / b</td>
+</tr>
+<tr>
+<td style="text-align:center">%=</td>
+<td style="text-align:left">取模赋值运算符</td>
+<td style="text-align:left">a %= b</td>
+<td style="text-align:left">相当于a = a % b</td>
+</tr>
+<tr>
+<td style="text-align:center">**=</td>
+<td style="text-align:left">幂赋值运算符</td>
+<td style="text-align:left">a **= b</td>
+<td style="text-align:left">相当于a = a ** b</td>
+</tr>
+<tr>
+<td style="text-align:center">//=</td>
+<td style="text-align:left">取整除赋值运算符</td>
+<td style="text-align:left">a //= b</td>
+<td style="text-align:left">相当于a = a // b</td>
+</tr>
+</tbody>
+</table>
+<p>除了 = 运算符，剩余的运算符都是相应的简写模式</p>
+<h3 id="比较运算符">比较运算符</h3>
+<p>比较运算符又称关系运算符，其返回值为bool（布尔）类型： True或者False</p>
+<p>比较运算用于对常量、变量或表达式的结果进行大小比较，如果这种比较是成立的，则返回True，反之返回False</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">比较运算符</th>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&gt;</td>
+<td style="text-align:left">大于</td>
+<td style="text-align:left">如果 &gt; 前面的值大于后面的值，则返回True，否则返回False</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;</td>
+<td style="text-align:left">小于</td>
+<td style="text-align:left">如果 &lt; 前面的值小于后面的值，则返回True，否则返回False</td>
+</tr>
+<tr>
+<td style="text-align:center">==</td>
+<td style="text-align:left">等于</td>
+<td style="text-align:left">如果 == 两边的值相等，则返回True，否则返回False</td>
+</tr>
+<tr>
+<td style="text-align:center">&gt;=</td>
+<td style="text-align:left">大于等于</td>
+<td style="text-align:left">等价于数学中的≥，如果&gt;=前面的值大于或等于后面的值，则返回True，否则返回False</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;=</td>
+<td style="text-align:left">大于等于</td>
+<td style="text-align:left">等价于数学中的≤，如果&lt;=前面的值小于或等于后面的值，则返回True，否则返回False</td>
+</tr>
+<tr>
+<td style="text-align:center">!=</td>
+<td style="text-align:left">不等于</td>
+<td style="text-align:left">等价于数学中的≠，如果!=两边的值不相等，则返回True，否则返回False</td>
+</tr>
+<tr>
+<td style="text-align:center">is</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">判断两个变量所引用的对象是否相同，相同则返回True，否则返回False</td>
+</tr>
+<tr>
+<td style="text-align:center">is not</td>
+<td style="text-align:left">不是</td>
+<td style="text-align:left">判断两个变量所引用的对象是否不相同，不相同则返回True，否则返回False</td>
+</tr>
+</tbody>
+</table>
+<p>重点：</p>
+<ul>
+<li>
+<p>==和=的区别 ==是相等判断，=是赋值操作</p>
+</li>
+<li>
+<p>==和is的区别 ==判断值是否相等，is判断是否为同一个对象</p>
+</li>
+</ul>
+<h3 id="逻辑运算符">逻辑运算符</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">逻辑运算符</th>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">and</td>
+<td style="text-align:left">与</td>
+<td style="text-align:left">逻辑与运算，等价于数学中的“且”</td>
+</tr>
+<tr>
+<td style="text-align:center">or</td>
+<td style="text-align:left">或</td>
+<td style="text-align:left">逻辑或运算，等价于数学中的“或”</td>
+</tr>
+<tr>
+<td style="text-align:center">not</td>
+<td style="text-align:left">非</td>
+<td style="text-align:left">逻辑非运算，等价于数学中的“非”</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>逻辑短路</p>
+<p>Python中的逻辑操作符and和or，也叫惰性求值，就是从左至右解析。由于他们是惰性的，在解析的过程中一旦确定了值，就不往后解析代码。</p>
+<p>这一点非常重要，在将来的代码中会有遇到很多这样的例子。如果不理解此概念非常容易写出错误的逻辑。</p>
+<p>利用逻辑短路可简化代码，但降低了代码的可读性，应谨慎使用</p>
+</li>
+</ul>
+<h3 id="运算符的优先级">运算符的优先级</h3>
+<p>所谓优先级，就是当多个运算符同时出现在一个表达式中时，先执行哪个运算符。</p>
+<p>优先级如下表，优先级从高到低排序</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">运算符</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">()</td>
+</tr>
+<tr>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td style="text-align:center">*、/、//、%</td>
+</tr>
+<tr>
+<td style="text-align:center">+、-</td>
+</tr>
+<tr>
+<td style="text-align:center">==、!=、&gt;、&gt;=、&lt;、&lt;=</td>
+</tr>
+<tr>
+<td style="text-align:center">not</td>
+</tr>
+<tr>
+<td style="text-align:center">and</td>
+</tr>
+<tr>
+<td style="text-align:center">or</td>
+</tr>
+</tbody>
+</table>
+<p>运算符除了要考虑优先级之外，还需要考虑运算符的结合性，所谓结合性，就是当一个表达式中出现多个优先级相同的运算符时，先执行哪个运算符</p>
+<ul>
+<li>
+<p>多数运算符是左结合</p>
+</li>
+<li>
+<p>**（幂）和not（非）是右结合</p>
+</li>
+</ul>
+<h2 id="总结回顾">总结回顾</h2>
+<p>本节主要介绍了Python的各种运算符。算数运算符、比较运算符和我们数学中的概念是一样的，只需要注意的是==和is、!=和is not的区别。赋值运算符是进行赋值操作的，除了基本的赋值运算符 = ，其他的都是算数运算符和赋值操作的简写。逻辑运算符需要注意逻辑短路的问题。最后我们要注意运算符的优先级问题。运算符是程序最基本的单元，它是一切程序逻辑的基础，有着最为广泛的应用，必须要熟练掌握它。</p>
+<h2 id="本节作业">本节作业</h2>
+<ul>
+<li>
+<p>选择题</p>
+<ol>
+<li>a=2，b=3，那么c=a**b运算的结果是（）</li>
+</ol>
+<ul>
+<li>A. 6</li>
+<li>B. 8</li>
+<li>C. 9</li>
+<li>D. 23</li>
+</ul>
+<ol start="2">
+<li>执行（2<em>3）/（9-3</em>2），输出的结果是什么（）</li>
+</ol>
+<ul>
+<li>A. 1</li>
+<li>B. 2.0</li>
+<li>C. 2</li>
+<li>D. 10</li>
+</ul>
+<ol start="3">
+<li>print(46//8) 的结果（）</li>
+</ol>
+<ul>
+<li>A. 5</li>
+<li>B. 6</li>
+<li>C. 5.0</li>
+<li>D. 5.75</li>
+</ul>
+<ol start="4">
+<li>已知变量a=2，b=3，执行语句a%=a+b后，变量a的值（</li>
+</ol>
+<ul>
+<li>A. 0</li>
+<li>B. 2</li>
+<li>C. 3</li>
+<li>D. 12</li>
+</ul>
+<ol start="5">
+<li>执行语句print(10 == 10.0)，结果为（）</li>
+</ol>
+<ul>
+<li>A. 10</li>
+<li>B. 10.0</li>
+<li>C. True</li>
+<li>D. False</li>
+</ul>
+<ol start="6">
+<li>以下代码运行的结果是（）</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+a <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+b <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
+print(a<span style="color:#f92672">==</span>b)
+
+</code></pre></div><ul>
+<li>A. 0</li>
+<li>B. False</li>
+<li>C. True</li>
+<li>D. error</li>
+</ul>
+<ol start="7">
+<li>已知x=5，y=6，则表达式not（x!=y）的值为（）</li>
+</ol>
+<ul>
+<li>A. True</li>
+<li>B. False</li>
+<li>C. 5</li>
+<li>D. 6</li>
+</ul>
+<ol start="8">
+<li>假设a=2，b=1，c=a and b - 1，那么c的值是（）</li>
+</ol>
+<ul>
+<li>A. 3</li>
+<li>B. 1</li>
+<li>C. 2</li>
+<li>D. 0</li>
+</ul>
+<ol start="9">
+<li>程序</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+print(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">*</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">or</span> <span style="color:#ae81ff">121</span><span style="color:#f92672">&gt;</span><span style="color:#ae81ff">12</span> <span style="color:#f92672">and</span> <span style="color:#ae81ff">7</span><span style="color:#f92672">%</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">%</span><span style="color:#ae81ff">3</span>)
+
+</code></pre></div><p>的结果是（）</p>
+<ul>
+<li>A. False</li>
+<li>B. True</li>
+<li>C. 3</li>
+<li>D. 4</li>
+</ul>
+</li>
+<li>
+<p>操作题</p>
+<ol>
+<li>抽出一个三位数（如479）的个位上的数字</li>
+</ol>
+</li>
+</ul>
+
+
+
+正文结束
+<hr>
+
+
+
+  <p><strong>相关分类:</strong></p>
+
+
+  
+  
+  
+  <span class="categories-item"><a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+  
+  
+
+
+
+
+
+
+  <p><strong>相关标签:</strong></p>
+
+
+  
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B">少儿编程</a></span>
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/python">python</a></span>
+  
+  
+
+
+
+
+
+<p><a name="nav-menu" id="nav-menu"><strong>更多内容</strong></a></p>
+
+<ul>
+    
+    <li>
+      <a href="/categories/">
+      
+      按分类
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/">
+      
+      按标签
+      </a>
+    </li>
+    
+    <li>
+      <a href="/about/">
+      
+      关于作者
+      </a>
+    </li>
+    
+    <li>
+      <a href="/">
+      
+      首页
+      </a>
+    </li>
+    
+</ul>
+
+<p><a href="#">回到顶部</a></p>
+</body>
+</html>

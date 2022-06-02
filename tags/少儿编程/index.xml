@@ -6,7 +6,21 @@
     <description>Recent content in 少儿编程 on Kwazii.top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jun 2022 01:25:57 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jun 2022 18:29:26 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一章 第3课 运算符</title>
+      <link>https://kwazii.top/kids/python/chapter-3/</link>
+      <pubDate>Wed, 01 Jun 2022 18:29:26 +0800</pubDate>
+      
+      <guid>https://kwazii.top/kids/python/chapter-3/</guid>
+      <description>本节目标 算数运算符 与数学运算符的比较
+   名称 数学 Python 作用     加 + + 把两个对象相加，或拼接字符串   减 - - 把两个对象相减   乘 X * 把两个数相乘，或是放回一个被重复若干次的字符串   除 ➗ / 把两个对象相除，商是小数（能整除也保留一位小数）   取整除  // 取两个数相除的商（整数部分）   取模  % 取两个数相除的余数   幂  ** 取x的n次方    重点：
+  其中的加和乘可用于字符串类型的运算
+  取整除（//）是向下取整，不是四舍五入, 例如24//5的结果是4，而不是5
+  取模（%）如果能整除，则取模的结果为0
+  赋值运算符    运算符 描述 例子 作用     = 赋值运算符 a = 5 把5赋值给变量a   += 加法赋值运算符 a += b 相当于a = a + b   -= 减法赋值运算符 a -= b 相当于a = a - b   *= 乘法赋值运算符 a *= b 相当于a = a * b   /= 除法赋值运算符 a /= b 相当于a = a / b   %= 取模赋值运算符 a %= b 相当于a = a % b   **= 幂赋值运算符 a **= b 相当于a = a ** b   //= 取整除赋值运算符 a //= b 相当于a = a // b    除了 = 运算符，剩余的运算符都是相应的简写模式</description>
+    </item>
+    
     <item>
       <title>第一章 第2课 编程基础</title>
       <link>https://kwazii.top/kids/python/chapter-2/</link>
