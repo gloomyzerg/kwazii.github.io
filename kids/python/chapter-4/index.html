@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    
+    
+    <title>Kwazii.top | 第一章 第4节 turtle库</title>
+    <style>
+img{ max-width: 80vw; }
+.highlight{ max-width: 80vw; }
+.highlight pre{ font-size: 16px; background-color: #333333 !important; }
+table{border-top: 1px #333 solid;border-left: 1px #333 solid;border-collapse: collapse;}
+th{background-color: #e1e1e1;}
+th,td{border-bottom: 1px #333 solid;border-right: 1px #333 solid;padding:8px;}
+</style>
+
+</head>
+<body>
+
+
+<h1>第一章 第4节 turtle库</h1>
+
+
+  
+  <p>作者： <a href="/about/">Kwazii</a></p>
+
+
+
+  
+  
+
+  <p>2022-06-02</p>
+
+
+
+
+
+<span class="categories-item"><a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+
+
+
+
+
+
+
+<aside>
+    <header>
+    <h2>第一章 第4节 turtle库</h2>
+    </header>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#写在前面">写在前面</a></li>
+    <li><a href="#本节目标">本节目标</a>
+      <ul>
+        <li><a href="#坐标系">坐标系</a></li>
+        <li><a href="#画笔体系">画笔体系</a></li>
+        <li><a href="#运动体系">运动体系</a></li>
+        <li><a href="#其他函数">其他函数</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结回顾">总结回顾</a></li>
+    <li><a href="#本节作业">本节作业</a></li>
+  </ul>
+</nav>
+</aside>
+
+
+
+<h2 id="写在前面">写在前面</h2>
+<blockquote>
+<p>Python这门语言也被称作“胶水语言”，可用于连接多个小的甚至不兼容的部件，整合不同的库或代码。Python最大的特征就是有非常丰富的库，并且语法简单易懂，因而深受大家的喜爱。那么说到丰富的库，Numpy、Pandas、Matplotlib、TensorFlow、Scrapy等等这些大名鼎鼎的库，在科学计算、自动化、大数据、人工智能等领域发挥着至关重要的作用。虽然这些离我们现在的学习来说可能还比较遥远，但万丈高楼平地起，让我们从最基础的知识开始慢慢来了解Python这门语言，感受它的魅力。</p>
+</blockquote>
+<blockquote>
+<p>废话不多说，我们现在就进入今天这节课，可能是你接触的第一个Python库 turtle。</p>
+</blockquote>
+<blockquote>
+<p><a href="https://docs.python.org/zh-cn/3/library/turtle.html">turtle官方文档</a></p>
+</blockquote>
+<h2 id="本节目标">本节目标</h2>
+<h3 id="坐标系">坐标系</h3>
+<ol>
+<li>
+<p>画布在屏幕中的坐标系</p>
+<p><img src="/image/kids-python/chapter-4-01.png" alt=""></p>
+<p>画布的（0，0）坐标位于屏幕的左上方。
+最小单位为像素。</p>
+<p>setup() 设置画布大小及位置，函数签名：turtle.setup(width, height, startx, starty)</p>
+</li>
+<li>
+<p>画笔在画布中的坐标系</p>
+<p><img src="/image/kids-python/chapter-4-02.png" alt=""></p>
+<p>画笔在画布中的坐标系和画布在屏幕中的坐标系是不一样的，最大的不同是画布的正中心是坐标系的原点（0，0）</p>
+</li>
+</ol>
+<h3 id="画笔体系">画笔体系</h3>
+<ol>
+<li>
+<p>画笔相关函数</p>
+<ul>
+<li>pen()</li>
+<li>pensize()</li>
+<li>penup()</li>
+<li>pendown()</li>
+<li>hideturtle()</li>
+<li>showturtle()</li>
+<li>shape()</li>
+<li>write()</li>
+</ul>
+</li>
+<li>
+<p>与颜色相关的函数</p>
+<ul>
+<li>pencolor()</li>
+<li>color()</li>
+<li>fillcolor()</li>
+<li>begin_fill()</li>
+<li>end_fill()</li>
+<li>bgcolor()</li>
+</ul>
+</li>
+</ol>
+<h3 id="运动体系">运动体系</h3>
+<ol>
+<li>
+<p>turtle的相对方向</p>
+<ul>
+<li>小海龟（画笔）在画布上是有方向的，默认的小海龟的头部是朝向画布的右方。</li>
+<li>小海龟（画笔）的方向会随着画笔方向的改变进行改变。</li>
+</ul>
+<p><img src="/image/kids-python/chapter-4-03.png" alt=""></p>
+</li>
+<li>
+<p>turtle的绝对方向</p>
+<ul>
+<li>
+<p>绝对方向是不变的</p>
+</li>
+<li>
+<p>绝对方向的划分，以屏幕右方为0度的起点，沿x轴逆时针转动，如下图所示</p>
+</li>
+</ul>
+<p><img src="/image/kids-python/chapter-4-04.png" alt=""></p>
+</li>
+<li>
+<p>相关函数</p>
+<ul>
+<li>goto()</li>
+<li>forward()</li>
+<li>backward()</li>
+<li>left()</li>
+<li>right()</li>
+<li>setheading()</li>
+<li>speed()</li>
+<li>home()</li>
+<li>dot()</li>
+<li>circle()</li>
+</ul>
+</li>
+</ol>
+<h3 id="其他函数">其他函数</h3>
+<ol>
+<li>
+<p>需要掌握的函数</p>
+<ul>
+<li>reset()</li>
+<li>clear()</li>
+<li>clone()</li>
+<li>stamp()</li>
+<li>screensize()</li>
+<li>done()</li>
+<li>mainloop()</li>
+</ul>
+</li>
+</ol>
+<h2 id="总结回顾">总结回顾</h2>
+<p>在这节课中主要介绍了turtle库以及一些常用函数，使用turtle可以帮助我们完成图形图像的绘制。课程中演示的例子都比较简单，但你可以发挥想象做出你想要的效果来。另外更重要的是通过对turtle库的学习，我们已经可以写出一个相对复杂的顺序结构的程序。这意味着我们通过绘制图形了解了程序运行的基本机制。同时也讲解了通过<a href="https://docs.python.org/zh-cn/3/library/turtle.html">turtle官方文档</a>来查询如何使用库提供的功能。阅读和查询文档是编程的一项重要技能，在以后的学习中你会经常用到它。程序的世界浩如烟海，任何人都不可能完全记住所有库的使用方法，此时文档将为我们提供最大的帮助，利用好它可以大大提高我们学习编程的能力。</p>
+<h2 id="本节作业">本节作业</h2>
+<ul>
+<li>
+<p>编程题</p>
+<ol>
+<li>
+<p>绘制下图</p>
+<p><img src="/image/kids-python/chapter-4-05.png" alt=""></p>
+<p>要求：</p>
+<p>画一个由两个直角三角形组成的正方形， 边长为180像素。</p>
+<p>左上三角形填充为黄色，右下三角形填充为红色</p>
+<p>设置画笔移动速度为1，线条颜色为黑色</p>
+<p>画图结束，隐藏并停止画笔</p>
+</li>
+<li>
+<p>绘制如下图所示的图形：一个正方形，内有3个红点，中间红点在正方形中心</p>
+<p><img src="/image/kids-python/chapter-4-06.png" alt=""></p>
+<p>要求：</p>
+<p>正方形的边长为200像素，线条颜色为黑色。</p>
+<p>圆点的直径均为20像素，颜色为红色</p>
+<p>中间圆点的圆心位置为正方形正中心，3个圆心之间的距离均为40</p>
+</li>
+</ol>
+</li>
+</ul>
+
+
+
+正文结束
+<hr>
+
+
+
+  <p><strong>相关分类:</strong></p>
+
+
+  
+  
+  
+  <span class="categories-item"><a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+  
+  
+
+
+
+
+
+
+  <p><strong>相关标签:</strong></p>
+
+
+  
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B">少儿编程</a></span>
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/python">python</a></span>
+  
+  
+
+
+
+
+
+<p><a name="nav-menu" id="nav-menu"><strong>更多内容</strong></a></p>
+
+<ul>
+    
+    <li>
+      <a href="/categories/">
+      
+      按分类
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/">
+      
+      按标签
+      </a>
+    </li>
+    
+    <li>
+      <a href="/about/">
+      
+      关于作者
+      </a>
+    </li>
+    
+    <li>
+      <a href="/">
+      
+      首页
+      </a>
+    </li>
+    
+</ul>
+
+<p><a href="#">回到顶部</a></p>
+</body>
+</html>
