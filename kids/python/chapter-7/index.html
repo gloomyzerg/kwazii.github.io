@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    
+    
+    <title>Kwazii.top | 第二章 第7课 不可变序列-元组</title>
+    <style>
+img{ max-width: 80vw; }
+.highlight{ max-width: 80vw; }
+.highlight pre{ font-size: 16px; background-color: #333333 !important; }
+table{border-top: 1px #333 solid;border-left: 1px #333 solid;border-collapse: collapse;}
+th{background-color: #e1e1e1;}
+th,td{border-bottom: 1px #333 solid;border-right: 1px #333 solid;padding:8px;}
+.metadata span{margin-right:16px;}
+</style>
+
+</head>
+<body>
+
+
+<h1>第二章 第7课 不可变序列-元组</h1>
+
+
+  <p class="metadata">
+
+  <span>作者：<a href="/about/">Kwazii</a></span>
+
+
+
+  
+  
+
+  <span>时间：2022-06-09</span>
+
+
+
+
+
+	<br><span class="categories-item">分类：<a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+
+
+</p>
+
+
+
+
+
+<h2>目录</h2>
+<aside>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#本节目标">本节目标</a>
+      <ul>
+        <li><a href="#什么是元组它与列表有什么不同">什么是元组，它与列表有什么不同</a></li>
+        <li><a href="#元组的创建">元组的创建</a></li>
+        <li><a href="#序列的通用操作">序列的通用操作</a></li>
+        <li><a href="#元组的操作">元组的操作</a></li>
+        <li><a href="#特别注意">特别注意</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结回顾">总结回顾</a></li>
+  </ul>
+</nav>
+</aside>
+
+
+
+<h2 id="本节目标">本节目标</h2>
+<h3 id="什么是元组它与列表有什么不同">什么是元组，它与列表有什么不同</h3>
+<p>元组也是序列的一种，元组与列表类似，但元组的元素不能修改。</p>
+<h3 id="元组的创建">元组的创建</h3>
+<p>有两种方式</p>
+<ul>
+<li>
+<p>(&lsquo;a&rsquo;, &lsquo;b&rsquo;, &lsquo;c&rsquo;)</p>
+</li>
+<li>
+<p>tuple([&lsquo;a&rsquo;, &lsquo;b&rsquo;, &lsquo;c&rsquo;])</p>
+</li>
+</ul>
+<h3 id="序列的通用操作">序列的通用操作</h3>
+<p>参考上一章节中的序列通用操作</p>
+<h3 id="元组的操作">元组的操作</h3>
+<ul>
+<li>index()</li>
+<li>count()</li>
+<li>sorted()</li>
+</ul>
+<h3 id="特别注意">特别注意</h3>
+<ol>
+<li>
+<p>如果元组中只有一个元素，仍需要加逗号，否则该对象并非元组，如下所示</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>a <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span>b <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1</span>,)
+<span style="color:#f92672">&gt;&gt;&gt;</span>print(type(a))
+
+<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">int</span><span style="color:#e6db74">&#39;&gt; #a 为整数</span>
+
+<span style="color:#f92672">&gt;&gt;&gt;</span>print(type(a))
+
+<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">tuple</span><span style="color:#e6db74">&#39;&gt; #b 为元组</span>
+
+</code></pre></div></li>
+<li>
+<p>元组为不可变序列，所以列表的很多操作是无法在元组中使用的，比如更新元素，添加元素，删除元素等。</p>
+</li>
+<li>
+<p>元组使用sorted()进行排序后，会生成一个列表，而不是一个元组。</p>
+</li>
+</ol>
+<h2 id="总结回顾">总结回顾</h2>
+<p>本节介绍了Python的另一种序列-元组，元组是一种不可变序列。它具有序列的通用操作，同时又和可变序列-列表有些不同。要能正确的区分列表和元组的不同，理解可变序列和不可变序列的差别。在不同的应用场景下，使用不同的序列类型。当然目前只需要简单的知道它们的分别，随着学习的深入，它们就像眼镜，你会知道你在什么时候需要它们。</p>
+
+
+
+正文结束
+<hr>
+
+
+
+  <p><strong>相关分类:</strong></p>
+
+
+  
+  
+  
+  <span class="categories-item"><a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+  
+  
+
+
+
+
+
+
+  <p><strong>相关标签:</strong></p>
+
+
+  
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B">少儿编程</a></span>
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/python">python</a></span>
+  
+  
+
+
+
+
+
+<p><a name="nav-menu" id="nav-menu"><strong>更多内容</strong></a></p>
+
+<ul>
+    
+    <li>
+      <a href="/categories/">
+      
+      按分类
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/">
+      
+      按标签
+      </a>
+    </li>
+    
+    <li>
+      <a href="/about/">
+      
+      关于作者
+      </a>
+    </li>
+    
+    <li>
+      <a href="/">
+      
+      首页
+      </a>
+    </li>
+    
+</ul>
+
+<p><a href="#">回到顶部</a></p>
+</body>
+</html>

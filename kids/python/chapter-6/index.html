@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    
+    
+    <title>Kwazii.top | 第二章 第6课 可变序列-列表</title>
+    <style>
+img{ max-width: 80vw; }
+.highlight{ max-width: 80vw; }
+.highlight pre{ font-size: 16px; background-color: #333333 !important; }
+table{border-top: 1px #333 solid;border-left: 1px #333 solid;border-collapse: collapse;}
+th{background-color: #e1e1e1;}
+th,td{border-bottom: 1px #333 solid;border-right: 1px #333 solid;padding:8px;}
+.metadata span{margin-right:16px;}
+</style>
+
+</head>
+<body>
+
+
+<h1>第二章 第6课 可变序列-列表</h1>
+
+
+  <p class="metadata">
+
+  <span>作者：<a href="/about/">Kwazii</a></span>
+
+
+
+  
+  
+
+  <span>时间：2022-06-06</span>
+
+
+
+
+
+	<br><span class="categories-item">分类：<a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+
+
+</p>
+
+
+
+
+
+<h2>目录</h2>
+<aside>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#本节目标">本节目标</a>
+      <ul>
+        <li><a href="#什么是列表">什么是列表</a></li>
+        <li><a href="#列表的创建">列表的创建</a></li>
+        <li><a href="#序列的通用操作">序列的通用操作</a></li>
+        <li><a href="#列表的专用操作">列表的专用操作</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结回顾">总结回顾</a></li>
+  </ul>
+</nav>
+</aside>
+
+
+
+<h2 id="本节目标">本节目标</h2>
+<h3 id="什么是列表">什么是列表</h3>
+<p>列表是Python中内置的有序，可变序列。列表的数据项不需要具有相同的类型。</p>
+<h3 id="列表的创建">列表的创建</h3>
+<p>有两种方式</p>
+<ul>
+<li>
+<p>[1,&lsquo;a&rsquo;,2]</p>
+</li>
+<li>
+<p>list(&lsquo;Python&rsquo;)</p>
+</li>
+</ul>
+<h3 id="序列的通用操作">序列的通用操作</h3>
+<p>所谓序列，指的是一块可存放多个值的连续内存空间，这些值按一定的顺序排列，可通过每个值所在的位置的编号（称为索引）访问他们。</p>
+<p>Python中常见的序列有列表，元组，字符串，range对象，二进制序列等。</p>
+<ol>
+<li>
+<p>序列的访问</p>
+<p>列表是序列的一种，所以所有的元素都是有序号的，我们称序号为索引。</p>
+<p><img src="/image/kids-python/chapter-6-01.png" alt=""></p>
+<p>访问列表中的值，只需要使用列表变量名加上下标（索引）即可，如t[2], t[-3]</p>
+</li>
+<li>
+<p>序列的嵌套</p>
+<p>列表中可以再嵌套列表，被嵌套的列表是作为一个整体看待的，所以其下标为一个，如下例所示。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>t <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], <span style="color:#e6db74">&#39;c&#39;</span>]
+<span style="color:#f92672">&gt;&gt;&gt;</span>t[<span style="color:#ae81ff">2</span>]
+
+[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+
+</code></pre></div></li>
+<li>
+<p>序列的截取</p>
+<p><img src="/image/kids-python/chapter-6-02.png" alt=""></p>
+<p>截取又称作切片，它需要使用两个索引下标来确定切片的起始位置和结束位置。格式为：变量名[头下标:尾下标:步长]，其中步长是可选参数，默认为1(注意步长不是长度)</p>
+<p>头下标和尾下标也可以省略，需注意开闭区间问题</p>
+</li>
+<li>
+<p>序列的长度</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>t <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], <span style="color:#e6db74">&#39;c&#39;</span>]
+<span style="color:#f92672">&gt;&gt;&gt;</span>len(t)
+
+<span style="color:#ae81ff">4</span>
+
+</code></pre></div></li>
+<li>
+<p>检查元素是否包含在序列中</p>
+<p>使用in命令进行判断，其返回值是布尔类型</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>t <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], <span style="color:#e6db74">&#39;c&#39;</span>]
+<span style="color:#f92672">&gt;&gt;&gt;</span>print(<span style="color:#e6db74">&#39;a&#39;</span> <span style="color:#f92672">in</span> t)
+
+<span style="color:#66d9ef">True</span>
+
+</code></pre></div></li>
+<li>
+<p>找出序列中的最大元素</p>
+<ul>
+<li>
+<p>max()</p>
+</li>
+<li>
+<p>当元素均为数字类型时，返回最大数字</p>
+</li>
+<li>
+<p>当元素均为字符串类型时，按Unicode编码的顺序返回编码最大的元素</p>
+</li>
+<li>
+<p>当元素为多种类型混合时，max()函数报错</p>
+</li>
+</ul>
+</li>
+<li>
+<p>找出序列中的最小元素</p>
+<ul>
+<li>
+<p>min()</p>
+</li>
+<li>
+<p>特性同max()</p>
+</li>
+</ul>
+</li>
+<li>
+<p>序列求和运算</p>
+<ul>
+<li>
+<p>sum()</p>
+</li>
+<li>
+<p>元素只能全部为数字类型</p>
+</li>
+</ul>
+</li>
+<li>
+<p>序列的加法运算</p>
+<ul>
+<li>
+<p>这里的加法不同于数学中的加法，序列的加法相当于将两个序列合并在一起</p>
+</li>
+<li>
+<p>列表中重复元素不会被合并</p>
+</li>
+</ul>
+</li>
+<li>
+<p>序列的乘法运算</p>
+<ul>
+<li>序列只能和正整数相乘，代表的是将该序列重复n次</li>
+</ul>
+</li>
+</ol>
+<h3 id="列表的专用操作">列表的专用操作</h3>
+<ol>
+<li>
+<p>更新列表中的值</p>
+</li>
+<li>
+<p>删除列表中的元素</p>
+<ul>
+<li>del()</li>
+<li>pop()</li>
+<li>remove()</li>
+<li>clear()</li>
+</ul>
+</li>
+<li>
+<p>添加元素到列表</p>
+<ul>
+<li>append()</li>
+<li>insert()</li>
+</ul>
+</li>
+<li>
+<p>查找元素</p>
+<ul>
+<li>index()</li>
+<li>count()</li>
+</ul>
+</li>
+<li>
+<p>列表的排序</p>
+<ul>
+<li>sort()</li>
+<li>sorted()</li>
+<li>reverse()</li>
+</ul>
+</li>
+</ol>
+<h2 id="总结回顾">总结回顾</h2>
+<p>本节我们认识了一种Python的数据类型-列表，注意不要混淆列表和序列的概念，列表只是序列的一种。列表是一种数据类型，而序列是一个逻辑概念，简单的理解它是多种具有相同特性的数据类型的统称。既然序列有相同特性，自然他们也有一些通用的操作。而列表作为序列的其中一种，也有它特有的操作。你应该记住它们，并正确的理解这些操作的含义，这在不久的将来会非常有用。最后，再次强调文档是最好的老师，而如何找到它们是最重要的技能。</p>
+
+
+
+正文结束
+<hr>
+
+
+
+  <p><strong>相关分类:</strong></p>
+
+
+  
+  
+  
+  <span class="categories-item"><a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+  
+  
+
+
+
+
+
+
+  <p><strong>相关标签:</strong></p>
+
+
+  
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B">少儿编程</a></span>
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/python">python</a></span>
+  
+  
+
+
+
+
+
+<p><a name="nav-menu" id="nav-menu"><strong>更多内容</strong></a></p>
+
+<ul>
+    
+    <li>
+      <a href="/categories/">
+      
+      按分类
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/">
+      
+      按标签
+      </a>
+    </li>
+    
+    <li>
+      <a href="/about/">
+      
+      关于作者
+      </a>
+    </li>
+    
+    <li>
+      <a href="/">
+      
+      首页
+      </a>
+    </li>
+    
+</ul>
+
+<p><a href="#">回到顶部</a></p>
+</body>
+</html>

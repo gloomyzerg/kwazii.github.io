@@ -6,7 +6,81 @@
     <description>Recent content on Kwazii.top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jun 2022 17:46:09 +0800</lastBuildDate><atom:link href="https://kwazii.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jun 2022 02:31:05 +0800</lastBuildDate><atom:link href="https://kwazii.top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第二章 第7课 不可变序列-元组</title>
+      <link>https://kwazii.top/kids/python/chapter-7/</link>
+      <pubDate>Thu, 09 Jun 2022 02:31:05 +0800</pubDate>
+      
+      <guid>https://kwazii.top/kids/python/chapter-7/</guid>
+      <description>本节目标 什么是元组，它与列表有什么不同 元组也是序列的一种，元组与列表类似，但元组的元素不能修改。
+元组的创建 有两种方式
+  (&amp;lsquo;a&amp;rsquo;, &amp;lsquo;b&amp;rsquo;, &amp;lsquo;c&amp;rsquo;)
+  tuple([&amp;lsquo;a&amp;rsquo;, &amp;lsquo;b&amp;rsquo;, &amp;lsquo;c&amp;rsquo;])
+  序列的通用操作 参考上一章节中的序列通用操作
+元组的操作  index() count() sorted()  特别注意   如果元组中只有一个元素，仍需要加逗号，否则该对象并非元组，如下所示
+&amp;gt;&amp;gt;&amp;gt;a = (1) &amp;gt;&amp;gt;&amp;gt;b = (1,) &amp;gt;&amp;gt;&amp;gt;print(type(a)) &amp;lt;class &amp;#39;int&amp;#39;&amp;gt; #a 为整数 &amp;gt;&amp;gt;&amp;gt;print(type(a)) &amp;lt;class &amp;#39;tuple&amp;#39;&amp;gt; #b 为元组   元组为不可变序列，所以列表的很多操作是无法在元组中使用的，比如更新元素，添加元素，删除元素等。
+  元组使用sorted()进行排序后，会生成一个列表，而不是一个元组。
+  总结回顾 本节介绍了Python的另一种序列-元组，元组是一种不可变序列。它具有序列的通用操作，同时又和可变序列-列表有些不同。要能正确的区分列表和元组的不同，理解可变序列和不可变序列的差别。在不同的应用场景下，使用不同的序列类型。当然目前只需要简单的知道它们的分别，随着学习的深入，它们就像眼镜，你会知道你在什么时候需要它们。</description>
+    </item>
+    
+    <item>
+      <title>第二章 第6课 可变序列-列表</title>
+      <link>https://kwazii.top/kids/python/chapter-6/</link>
+      <pubDate>Mon, 06 Jun 2022 22:29:46 +0800</pubDate>
+      
+      <guid>https://kwazii.top/kids/python/chapter-6/</guid>
+      <description>本节目标 什么是列表 列表是Python中内置的有序，可变序列。列表的数据项不需要具有相同的类型。
+列表的创建 有两种方式
+  [1,&amp;lsquo;a&amp;rsquo;,2]
+  list(&amp;lsquo;Python&amp;rsquo;)
+  序列的通用操作 所谓序列，指的是一块可存放多个值的连续内存空间，这些值按一定的顺序排列，可通过每个值所在的位置的编号（称为索引）访问他们。
+Python中常见的序列有列表，元组，字符串，range对象，二进制序列等。
+  序列的访问
+列表是序列的一种，所以所有的元素都是有序号的，我们称序号为索引。
+访问列表中的值，只需要使用列表变量名加上下标（索引）即可，如t[2], t[-3]
+  序列的嵌套
+列表中可以再嵌套列表，被嵌套的列表是作为一个整体看待的，所以其下标为一个，如下例所示。
+&amp;gt;&amp;gt;&amp;gt;t = [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;, [1, 2, 3], &amp;#39;c&amp;#39;] &amp;gt;&amp;gt;&amp;gt;t[2] [1, 2, 3]   序列的截取
+截取又称作切片，它需要使用两个索引下标来确定切片的起始位置和结束位置。格式为：变量名[头下标:尾下标:步长]，其中步长是可选参数，默认为1(注意步长不是长度)
+头下标和尾下标也可以省略，需注意开闭区间问题
+  序列的长度
+&amp;gt;&amp;gt;&amp;gt;t = [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;, [1, 2, 3], &amp;#39;c&amp;#39;] &amp;gt;&amp;gt;&amp;gt;len(t) 4   检查元素是否包含在序列中
+使用in命令进行判断，其返回值是布尔类型
+&amp;gt;&amp;gt;&amp;gt;t = [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;, [1, 2, 3], &amp;#39;c&amp;#39;] &amp;gt;&amp;gt;&amp;gt;print(&amp;#39;a&amp;#39; in t) True   找出序列中的最大元素</description>
+    </item>
+    
+    <item>
+      <title>第二章 第5课 基本数据类型</title>
+      <link>https://kwazii.top/kids/python/chapter-5/</link>
+      <pubDate>Mon, 06 Jun 2022 22:14:57 +0800</pubDate>
+      
+      <guid>https://kwazii.top/kids/python/chapter-5/</guid>
+      <description>本节目标 对象、值与类型 对象是Python 中对数据的抽象。 Python 程序中的所有数据都是由对象或对象间关系来表示的。
+每个对象都有各自的标识号、类型和值。一个对象被创建后，它的标识号就绝不会改变；你可以将其理解为该对象在内存中的地址。 &amp;lsquo;is&amp;rsquo; 运算符可以比较两个对象的标识号是否相同；id() 函数能返回一个代表其标识号的整数。
+了解6个标准数据类型   数字(Numbers)
+int(long在python3已废弃)
+float
+bool(布尔) python3新加入关键字True False
+complex
+  字符串(String)
+  列表(List)
+  元组(Tuple)
+  字典(Dictionary)
+  集合(Set)
+  可变数据类型和不可变数据类型   可变数据类型
+  列表
+  集合
+  字典
+  当该数据类型的对应变量的值发生改变时，它对应的内存地址不会发生改变（也可以理解为，可变数据类型被创建后，内存里的数据是可以改变的）
+  不可变数据类型
+  数字
+  字符串
+  元组
+  当该数据类型的对应变量的值发生改变时，它对应的内存地址也会发生改变（也可以理解为，不可变数据类型一旦被创建，其内存里的数据是不能改变的）
+  总结回顾 本节内容非常简短，我们只需要了解一些关于类型的基本概念，在Python中有6种数据类型，数据类型分为可变和不可变两种。更为深入的知识将在后面的课程中一一进行介绍。</description>
+    </item>
+    
     <item>
       <title>第一章 第4节 turtle库</title>
       <link>https://kwazii.top/kids/python/chapter-4/</link>
