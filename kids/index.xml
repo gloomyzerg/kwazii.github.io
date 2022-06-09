@@ -6,7 +6,23 @@
     <description>Recent content in Kids on Kwazii.top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Jun 2022 02:31:05 +0800</lastBuildDate><atom:link href="https://kwazii.top/kids/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jun 2022 03:15:39 +0800</lastBuildDate><atom:link href="https://kwazii.top/kids/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第二章 第8课 字符串</title>
+      <link>https://kwazii.top/kids/python/chapter-8/</link>
+      <pubDate>Thu, 09 Jun 2022 03:15:39 +0800</pubDate>
+      
+      <guid>https://kwazii.top/kids/python/chapter-8/</guid>
+      <description>本节目标 字符串的特性 字符串是不可变序列的一种。
+字符串的创建   name = &amp;ldquo;python&amp;rdquo;
+  str(1234)
+  序列的操作在字符串中的应用  字符串的访问 字符串的截取 len() in + max() min() sorted() index() count()  字符串特有的相关操作   转义字符
+为了输出一些特殊的字符，比如引号、缩进、换行等，在大部分编程语言的字符串中都有转义字符。
+转义字符由反斜杠 \ 开头
+常用的转义字符如下：
+   转义符 描述     \ 反斜杠（\）   &#39; 单引号（&#39;）   &amp;quot; 双引号（&amp;quot;）   \n 换行符（LF）   \r 回车符（CR）   \t 水平制表符（TAB）      格式化输出</description>
+    </item>
+    
     <item>
       <title>第二章 第7课 不可变序列-元组</title>
       <link>https://kwazii.top/kids/python/chapter-7/</link>

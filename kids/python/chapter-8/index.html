@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    
+    
+    <title>Kwazii.top | 第二章 第8课 字符串</title>
+    <style>
+img{ max-width: 80vw; }
+.highlight{ max-width: 80vw; }
+.highlight pre{ font-size: 16px; background-color: #333333 !important; }
+table{border-top: 1px #333 solid;border-left: 1px #333 solid;border-collapse: collapse;}
+th{background-color: #e1e1e1;}
+th,td{border-bottom: 1px #333 solid;border-right: 1px #333 solid;padding:8px;}
+.metadata span{margin-right:16px;}
+</style>
+
+</head>
+<body>
+
+
+<h1>第二章 第8课 字符串</h1>
+
+
+  <p class="metadata">
+
+  <span>作者：<a href="/about/">Kwazii</a></span>
+
+
+
+  
+  
+
+  <span>时间：2022-06-09</span>
+
+
+
+
+
+	<br><span class="categories-item">分类：<a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+
+
+</p>
+
+
+
+
+
+<h2>目录</h2>
+<aside>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#本节目标">本节目标</a>
+      <ul>
+        <li><a href="#字符串的特性">字符串的特性</a></li>
+        <li><a href="#字符串的创建">字符串的创建</a></li>
+        <li><a href="#序列的操作在字符串中的应用">序列的操作在字符串中的应用</a></li>
+        <li><a href="#字符串特有的相关操作">字符串特有的相关操作</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结回顾">总结回顾</a></li>
+  </ul>
+</nav>
+</aside>
+
+
+
+<h2 id="本节目标">本节目标</h2>
+<h3 id="字符串的特性">字符串的特性</h3>
+<p>字符串是不可变序列的一种。</p>
+<h3 id="字符串的创建">字符串的创建</h3>
+<ul>
+<li>
+<p>name = &ldquo;python&rdquo;</p>
+</li>
+<li>
+<p>str(1234)</p>
+</li>
+</ul>
+<h3 id="序列的操作在字符串中的应用">序列的操作在字符串中的应用</h3>
+<ol>
+<li>字符串的访问</li>
+<li>字符串的截取</li>
+<li>len()</li>
+<li>in</li>
+<li>+</li>
+<li>max()</li>
+<li>min()</li>
+<li>sorted()</li>
+<li>index()</li>
+<li>count()</li>
+</ol>
+<h3 id="字符串特有的相关操作">字符串特有的相关操作</h3>
+<ol>
+<li>
+<p>转义字符</p>
+<p>为了输出一些特殊的字符，比如引号、缩进、换行等，在大部分编程语言的字符串中都有转义字符。</p>
+<p>转义字符由反斜杠 \ 开头</p>
+<p>常用的转义字符如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">转义符</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">\</td>
+<td style="text-align:left">反斜杠（\）</td>
+</tr>
+<tr>
+<td style="text-align:center">'</td>
+<td style="text-align:left">单引号（'）</td>
+</tr>
+<tr>
+<td style="text-align:center">&quot;</td>
+<td style="text-align:left">双引号（&quot;）</td>
+</tr>
+<tr>
+<td style="text-align:center">\n</td>
+<td style="text-align:left">换行符（LF）</td>
+</tr>
+<tr>
+<td style="text-align:center">\r</td>
+<td style="text-align:left">回车符（CR）</td>
+</tr>
+<tr>
+<td style="text-align:center">\t</td>
+<td style="text-align:left">水平制表符（TAB）</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>格式化输出</p>
+<ul>
+<li>
+<p>%格式化输出</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">符号</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">%s</td>
+<td style="text-align:left">格式化整数或字符串，如果s前面有数字，则代表所要站的位置长度</td>
+</tr>
+<tr>
+<td style="text-align:center">%f</td>
+<td style="text-align:left">格式化浮点数，如果f前面有数字，则代表保留的小数精度</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>format格式化输出</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>print(<span style="color:#e6db74">&#39;1乘以</span><span style="color:#e6db74">{0}</span><span style="color:#e6db74">等于</span><span style="color:#e6db74">{0}</span><span style="color:#e6db74">，2乘以</span><span style="color:#e6db74">{1}</span><span style="color:#e6db74">等于</span><span style="color:#e6db74">{2}</span><span style="color:#e6db74">。&#39;</span><span style="color:#f92672">.</span>format(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">8</span>))
+
+
+<span style="color:#f92672">&gt;&gt;&gt;</span>print(<span style="color:#e6db74">&#39;我叫</span><span style="color:#e6db74">{name}</span><span style="color:#e6db74">, 这里是我的</span><span style="color:#e6db74">{program}</span><span style="color:#e6db74">课。&#39;</span><span style="color:#f92672">.</span>format(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kwazii&#39;</span>,program<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;python&#39;</span>))
+
+</code></pre></div><pre tabindex="0"><code>
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p>split()</p>
+<p>将一个字符串使用分割符分割成字符串列表。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>fruit <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;苹果,香蕉,橘子,葡萄&#34;</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span>fruit<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)
+
+[<span style="color:#e6db74">&#39;苹果&#39;</span>,<span style="color:#e6db74">&#39;香蕉&#39;</span>,<span style="color:#e6db74">&#39;橘子&#39;</span>,<span style="color:#e6db74">&#39;葡萄&#39;</span>]
+
+</code></pre></div></li>
+<li>
+<p>join()</p>
+<p>和split()的功能相反</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>fruit <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;苹果&#39;</span>,<span style="color:#e6db74">&#39;香蕉&#39;</span>,<span style="color:#e6db74">&#39;橘子&#39;</span>,<span style="color:#e6db74">&#39;葡萄&#39;</span>]
+<span style="color:#f92672">&gt;&gt;&gt;</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#f92672">.</span>join(fruit)
+
+<span style="color:#e6db74">&#34;苹果,香蕉,橘子,葡萄&#34;</span>
+
+</code></pre></div></li>
+</ol>
+<h2 id="总结回顾">总结回顾</h2>
+<p>字符串是我们使用最多的数据类型，它的一些常用操作在程序中的使用频次也是最高的。字符串作为序列的一种，它拥有序列的一些通用操作。同时字符串作为程序最重要的输入输出手段，格式化输出一个字符串也是非常重要的。另外不要忘记转义字符，在某些情况下它们特别有用。</p>
+
+
+
+正文结束
+<hr>
+
+
+
+  <p><strong>相关分类:</strong></p>
+
+
+  
+  
+  
+  <span class="categories-item"><a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+  
+  
+
+
+
+
+
+
+  <p><strong>相关标签:</strong></p>
+
+
+  
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B">少儿编程</a></span>
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/python">python</a></span>
+  
+  
+
+
+
+
+
+<p><a name="nav-menu" id="nav-menu"><strong>更多内容</strong></a></p>
+
+<ul>
+    
+    <li>
+      <a href="/categories/">
+      
+      按分类
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/">
+      
+      按标签
+      </a>
+    </li>
+    
+    <li>
+      <a href="/about/">
+      
+      关于作者
+      </a>
+    </li>
+    
+    <li>
+      <a href="/">
+      
+      首页
+      </a>
+    </li>
+    
+</ul>
+
+<p><a href="#">回到顶部</a></p>
+</body>
+</html>
