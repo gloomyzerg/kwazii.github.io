@@ -6,7 +6,36 @@
     <description>Recent content in 少儿编程 on Kwazii.top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Jun 2022 10:12:14 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jun 2022 00:51:45 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第二章 第10节 流程控制</title>
+      <link>https://kwazii.top/kids/python/chapter-10/</link>
+      <pubDate>Fri, 10 Jun 2022 00:51:45 +0800</pubDate>
+      
+      <guid>https://kwazii.top/kids/python/chapter-10/</guid>
+      <description>本节目标 程序的基本结构 结构化程序设计思想是最早由E.W.Dijikstra在1965年提出的，结构化程序设计思想确实使程序执行效率提高。程序的出错率和维护费用大大减少。结构程序设计就是一种进行程序设计的原则和方法，按照这种原则和方法可设计出结构清晰、容易理解、容易修改、容易验证的程序。结构化程序设计的目标在于使程序具有一个合理结构，以保证和验证程序的正确性，从而开发出正确、合理的程序。
+结构化程序设计，主要有以下三种基本结构：顺序结构、选择结构（分支结构）和循环结构，由这三种基本结构可以组合出任意复杂的程序。换句话说，任何一个结构程序都可以由这三种基本控制结构来表示。
+顺序结构 顺序结构表示程序中的各操作是按照它们出现的先后顺序执行的。
+选择结构（分支结构） 选择结构表示程序的处理步骤出现了分支，它需要根据某一特定的条件选择其中的一个分支执行。选择结构有单分支、二分支和多分支三种形式。
+  条件语句的构成
+在Python当中，条件语句一般由if，else，elif组成。根据其组成的分支数量不同，可分为单分支结构、二分支结构和多分支结构。
+  单分支结构
+单分支结构由一个if语句组成，如果条件成立则执行指定的语句块；如果条件不成立则不执行任何语句块，直接进入条件语句之后的语句。
+单分支结构流程图，如下
+单分支结构的写法
+  if语句后面要跟随条件表达式。
+  if条件语句后面必须跟英文冒号（:），表示条件语句成立后年需要执行的程序的开始。
+  条件成立时运行的语句块必须缩进。
+  不在条件语句执行模块里面的后续语句不能缩进，必须和if条件语句保持同一缩进。
+  前面语句 if 条件表达式: 语句1 语句2 ... 语句n 后续语句 例子：
+a = 10 if a &amp;gt; 0: print(&amp;#39;a为整数&amp;#39;) print(&amp;#39;程序结束&amp;#39;)   二分支结构
+二分支结构，也有一个if语句，但和单分支结构不同的是，二分支结构有条件成立和条件不成立两种情况。
+二分支结构流程图，如下
+例子：
+a = 10 if a &amp;gt; 0: print(&amp;#39;a为整数&amp;#39;) else: print(&amp;#39;a为0或者负数&amp;#39;) print(&amp;#39;程序结束&amp;#39;) 二分支结构，其格式为if&amp;hellip;else&amp;hellip;
+  多分支结构</description>
+    </item>
+    
     <item>
       <title>第二章 第9课 字典</title>
       <link>https://kwazii.top/kids/python/chapter-9/</link>

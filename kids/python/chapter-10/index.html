@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    
+    
+    <title>Kwazii.top | 第二章 第10节 流程控制</title>
+    <style>
+img{ max-width: 80vw; }
+.highlight{ max-width: 80vw; }
+.highlight pre{ font-size: 16px; background-color: #333333 !important; }
+table{border-top: 1px #333 solid;border-left: 1px #333 solid;border-collapse: collapse;}
+th{background-color: #e1e1e1;}
+th,td{border-bottom: 1px #333 solid;border-right: 1px #333 solid;padding:8px;}
+.metadata span{margin-right:16px;}
+</style>
+
+</head>
+<body>
+
+
+<h1>第二章 第10节 流程控制</h1>
+
+
+  <p class="metadata">
+
+  <span>作者：<a href="/about/">Kwazii</a></span>
+
+
+
+  
+  
+
+  <span>时间：2022-06-10</span>
+
+
+
+
+
+	<br><span class="categories-item">分类：<a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+
+
+</p>
+
+
+
+
+
+<h2>目录</h2>
+<aside>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#本节目标">本节目标</a>
+      <ul>
+        <li><a href="#程序的基本结构">程序的基本结构</a></li>
+        <li><a href="#顺序结构">顺序结构</a></li>
+        <li><a href="#选择结构分支结构">选择结构（分支结构）</a></li>
+        <li><a href="#循环结构">循环结构</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结回顾">总结回顾</a></li>
+  </ul>
+</nav>
+</aside>
+
+
+
+<h2 id="本节目标">本节目标</h2>
+<h3 id="程序的基本结构">程序的基本结构</h3>
+<p>结构化程序设计思想是最早由E.W.Dijikstra在1965年提出的，结构化程序设计思想确实使程序执行效率提高。程序的出错率和维护费用大大减少。结构程序设计就是一种进行程序设计的原则和方法，按照这种原则和方法可设计出结构清晰、容易理解、容易修改、容易验证的程序。结构化程序设计的目标在于使程序具有一个合理结构，以保证和验证程序的正确性，从而开发出正确、合理的程序。</p>
+<p>结构化程序设计，主要有以下三种基本结构：顺序结构、选择结构（分支结构）和循环结构，由这三种基本结构可以组合出任意复杂的程序。换句话说，任何一个结构程序都可以由这三种基本控制结构来表示。</p>
+<h3 id="顺序结构">顺序结构</h3>
+<p>顺序结构表示程序中的各操作是按照它们出现的先后顺序执行的。</p>
+<h3 id="选择结构分支结构">选择结构（分支结构）</h3>
+<p>选择结构表示程序的处理步骤出现了分支，它需要根据某一特定的条件选择其中的一个分支执行。选择结构有单分支、二分支和多分支三种形式。</p>
+<ol>
+<li>
+<p>条件语句的构成</p>
+<p>在Python当中，条件语句一般由if，else，elif组成。根据其组成的分支数量不同，可分为单分支结构、二分支结构和多分支结构。</p>
+</li>
+<li>
+<p>单分支结构</p>
+<p>单分支结构由一个if语句组成，如果条件成立则执行指定的语句块；如果条件不成立则不执行任何语句块，直接进入条件语句之后的语句。</p>
+<p>单分支结构流程图，如下</p>
+<p><img src="/image/kids-python/chapter-10-01.png" alt=""></p>
+<p>单分支结构的写法</p>
+<ul>
+<li>
+<p>if语句后面要跟随条件表达式。</p>
+</li>
+<li>
+<p>if条件语句后面必须跟英文冒号（:），表示条件语句成立后年需要执行的程序的开始。</p>
+</li>
+<li>
+<p>条件成立时运行的语句块必须缩进。</p>
+</li>
+<li>
+<p>不在条件语句执行模块里面的后续语句不能缩进，必须和if条件语句保持同一缩进。</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">前面语句
+<span style="color:#66d9ef">if</span> 条件表达式:
+	语句1
+	语句2
+	<span style="color:#f92672">...</span>
+	语句n
+后续语句
+
+</code></pre></div><p>例子：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+<span style="color:#66d9ef">if</span> a <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+	print(<span style="color:#e6db74">&#39;a为整数&#39;</span>)
+print(<span style="color:#e6db74">&#39;程序结束&#39;</span>)
+</code></pre></div></li>
+<li>
+<p>二分支结构</p>
+<p>二分支结构，也有一个if语句，但和单分支结构不同的是，二分支结构有条件成立和条件不成立两种情况。</p>
+<p>二分支结构流程图，如下</p>
+<p><img src="/image/kids-python/chapter-10-02.png" alt=""></p>
+<p>例子：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+<span style="color:#66d9ef">if</span> a <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+	print(<span style="color:#e6db74">&#39;a为整数&#39;</span>)
+<span style="color:#66d9ef">else</span>:
+	print(<span style="color:#e6db74">&#39;a为0或者负数&#39;</span>)
+print(<span style="color:#e6db74">&#39;程序结束&#39;</span>)
+</code></pre></div><p>二分支结构，其格式为if&hellip;else&hellip;</p>
+</li>
+<li>
+<p>多分支结构</p>
+<p>多分支结构流程图，如下</p>
+<p><img src="/image/kids-python/chapter-10-03.png" alt=""></p>
+<p>例子：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+<span style="color:#66d9ef">if</span> a <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+	print(<span style="color:#e6db74">&#39;a为0&#39;</span>)
+<span style="color:#66d9ef">elif</span> a <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+	print(<span style="color:#e6db74">&#39;a为正数&#39;</span>)
+<span style="color:#66d9ef">else</span>:
+	print(<span style="color:#e6db74">&#39;a为负数&#39;</span>)
+print(<span style="color:#e6db74">&#39;程序结束&#39;</span>)
+</code></pre></div><p>多分支结构，其格式为if&hellip;elif&hellip;elif&hellip;else&hellip;</p>
+<p>其中elif可以有多个</p>
+</li>
+<li>
+<p>分支结构的嵌套</p>
+<p>在复杂的逻辑判断时，分支结构可以嵌套使用，根据条件自由组合。注意嵌套时缩进的问题，被嵌套的分支结构被整体看作一个代码块。</p>
+<p>例子：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">34</span>
+<span style="color:#66d9ef">if</span> a <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+	<span style="color:#66d9ef">if</span> a <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+        print(<span style="color:#e6db74">&#39;a可以被2整除，也可以被3整除&#39;</span>)
+	<span style="color:#66d9ef">else</span>:
+        print(<span style="color:#e6db74">&#39;a可以被2整除，但不可以被3整除&#39;</span>)
+
+<span style="color:#66d9ef">else</span>:
+	<span style="color:#66d9ef">if</span> a <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+        print(<span style="color:#e6db74">&#39;a不可以被2整除，但可以被3整除&#39;</span>)
+	<span style="color:#66d9ef">else</span>:
+        print(<span style="color:#e6db74">&#39;a不可以被2整除，也不可以被3整除&#39;</span>)
+print(<span style="color:#e6db74">&#39;程序结束&#39;</span>)
+</code></pre></div></li>
+<li>
+<p>注意事项</p>
+<ul>
+<li>
+<p>分支之后的程序，无论条件是否成立，都要执行。</p>
+</li>
+<li>
+<p>else后面虽然没有条件语句，但是依然需要加英文冒号。</p>
+</li>
+<li>
+<p>elif后面必须有条件语句，并且条件语句后面也要加英文冒号。</p>
+</li>
+<li>
+<p>嵌套分支注意分支的缩进，缩进的不同代表不同的嵌套层次。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="循环结构">循环结构</h3>
+<p>在Python中，循环结构可以分为两大类：条件循环（while循环）和便利循环（for循环）。</p>
+<ol>
+<li>
+<p>条件循环</p>
+<p>条件循环（while循环）指的是如果某个条件成立，则一直执行某个语句块，一般被重复执行的语句块称作循环体。</p>
+<p>条件循环流程图，如下</p>
+<p><img src="/image/kids-python/chapter-10-04.png" alt=""></p>
+<p>条件循环的一般格式</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">前序语句
+<span style="color:#66d9ef">while</span> 判断条件:
+	循环体
+后续语句
+</code></pre></div><p>例子：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+<span style="color:#66d9ef">while</span> a <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>:
+	print(a)
+	a <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+print(<span style="color:#e6db74">&#39;程序结束&#39;</span>)
+</code></pre></div></li>
+<li>
+<p>遍历循环</p>
+<p>遍历循环（for循环）是序列（或其他可迭代对象）中每个元素执行相关语句块的循环过程；也可以理解为将可迭代的对象从迭代器里面按照一定的规则（如一个一个，隔一个等）取出，然后进行相关操作的过程。</p>
+<p>遍历循环流程图，如下</p>
+<p><img src="/image/kids-python/chapter-10-05.png" alt=""></p>
+<p>遍历循环的一般格式</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">前序语句
+<span style="color:#66d9ef">for</span> 变量 <span style="color:#f92672">in</span> 序列:
+	循环体
+后续语句
+</code></pre></div><p>例子：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> i <span style="color:#f92672">&lt;</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">7</span>]:
+	print(i)
+print(<span style="color:#e6db74">&#39;程序结束&#39;</span>)
+</code></pre></div></li>
+<li>
+<p>break语句</p>
+<p>在循环中，如果需要跳出循环，一般使用break语句。break的作用是跳出当前循环。</p>
+<p>break语句一般会和条件语句结合使用，如下所示：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">l <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">7</span>]
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> l:
+	<span style="color:#66d9ef">if</span> i <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">3</span>:
+        <span style="color:#66d9ef">break</span>
+	print(i)
+print(<span style="color:#e6db74">&#39;程序结束&#39;</span>)
+</code></pre></div></li>
+<li>
+<p>continue语句</p>
+<p>和break语句不同，continue语句并不会跳出循环，它只是停止当次循环，然后跳回循环开始位置，继续下一次循环。</p>
+<p>看一个打印1-10中奇数的例子：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">while</span> a <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>:
+	a <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+	<span style="color:#66d9ef">if</span> a <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+        <span style="color:#66d9ef">continue</span>
+	print(a)
+print(<span style="color:#e6db74">&#39;程序结束&#39;</span>)
+</code></pre></div></li>
+<li>
+<p>range()</p>
+<p>range并不是一种类型，也不是列表，它是一种可迭代对象。</p>
+<p>ranger()的参数有3个，格式为range(start, stop, step)</p>
+<ul>
+<li>start 代表开始位置，该参数可选，如果没有则从0开始</li>
+<li>stop 代表结束位置，该参数必填</li>
+<li>step 代表步长，该参数可选，默认为1</li>
+</ul>
+<p>range()一般和for结合使用，用于控制循环次数，如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">5</span>):
+	print(i)
+print(<span style="color:#e6db74">&#39;程序结束&#39;</span>)
+</code></pre></div></li>
+<li>
+<p>注意事项</p>
+<ul>
+<li>
+<p>break和continue的区别</p>
+</li>
+<li>
+<p>循环也可以嵌套使用，需要注意缩进问题</p>
+</li>
+<li>
+<p>range() 开闭区间问题</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="总结回顾">总结回顾</h2>
+<p>本节主要学习了结构化程序设计，结构化程序的三种结构。这三种结构是任意程序逻辑的基石，今后无论我们编写的程序逻辑有多复杂，均可以通过顺序，选择，循环这三种结构实现。灵活地将它们组合，嵌套去完成我们要做的事。</p>
+
+
+
+正文结束
+<hr>
+
+
+
+  <p><strong>相关分类:</strong></p>
+
+
+  
+  
+  
+  <span class="categories-item"><a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+  
+  
+
+
+
+
+
+
+  <p><strong>相关标签:</strong></p>
+
+
+  
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B">少儿编程</a></span>
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/python">python</a></span>
+  
+  
+
+
+
+
+
+<p><a name="nav-menu" id="nav-menu"><strong>更多内容</strong></a></p>
+
+<ul>
+    
+    <li>
+      <a href="/categories/">
+      
+      按分类
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/">
+      
+      按标签
+      </a>
+    </li>
+    
+    <li>
+      <a href="/about/">
+      
+      关于作者
+      </a>
+    </li>
+    
+    <li>
+      <a href="/">
+      
+      首页
+      </a>
+    </li>
+    
+</ul>
+
+<p><a href="#">回到顶部</a></p>
+</body>
+</html>
