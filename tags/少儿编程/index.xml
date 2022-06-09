@@ -6,7 +6,28 @@
     <description>Recent content in 少儿编程 on Kwazii.top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Jun 2022 03:15:39 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jun 2022 10:12:14 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第二章 第9课 字典</title>
+      <link>https://kwazii.top/kids/python/chapter-9/</link>
+      <pubDate>Thu, 09 Jun 2022 10:12:14 +0800</pubDate>
+      
+      <guid>https://kwazii.top/kids/python/chapter-9/</guid>
+      <description>本节目标 什么是字典 Python中的字典指的是一种可变的容器类型，而且它可以装任意类型对象。
+字典由多个键值对组成，每个元素都分为键和值两部分。
+键是字典中进行读取及赋值的重要标记，要求有唯一性，通常为整数或字符串；
+值可以是任意类型，不要求唯一性
+字典的创建 字典的创建有多种方式，最常用的两种
+  {&amp;lsquo;apple&amp;rsquo;: 8, &amp;lsquo;banana&amp;rsquo;:4.5}
+  dict()
+  访问字典里的值 由于字典没有索引，所以我们不能使用索引的方法来访问字典
+  使用字典名加键进行访问
+&amp;gt;&amp;gt;&amp;gt;d = {&amp;#39;apple&amp;#39;: 8, &amp;#39;banana&amp;#39;: 4.5} &amp;gt;&amp;gt;&amp;gt;print(d[&amp;#39;apple&amp;#39;]) 8   使用字典中的get()函数进行访问
+&amp;gt;&amp;gt;&amp;gt;d = {&amp;#39;apple&amp;#39;: 8, &amp;#39;banana&amp;#39;: 4.5} &amp;gt;&amp;gt;&amp;gt;print(d.get(&amp;#39;apple&amp;#39;)) 8   修改字典   修改已有的键的值
+&amp;gt;&amp;gt;&amp;gt;d = {&amp;#39;apple&amp;#39;: 8, &amp;#39;banana&amp;#39;: 4.5} &amp;gt;&amp;gt;&amp;gt;d[&amp;#39;banana&amp;#39;] = 4   给字典添加新的键值对
+&amp;gt;&amp;gt;&amp;gt;d = {&amp;#39;apple&amp;#39;: 8, &amp;#39;banana&amp;#39;: 4.5} &amp;gt;&amp;gt;&amp;gt;d[&amp;#39;pear&amp;#39;] = 6 &amp;gt;&amp;gt;&amp;gt;print(d) {&amp;#39;apple&amp;#39;: 8, &amp;#39;banana&amp;#39;: 4.</description>
+    </item>
+    
     <item>
       <title>第二章 第8课 字符串</title>
       <link>https://kwazii.top/kids/python/chapter-8/</link>
