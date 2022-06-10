@@ -6,7 +6,16 @@
     <description>Recent content in python三级 on Kwazii.top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jun 2022 22:13:17 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/python%E4%B8%89%E7%BA%A7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jun 2022 22:17:57 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/python%E4%B8%89%E7%BA%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第十六课 核心函数</title>
+      <link>https://kwazii.top/kids/python/chapter-16/</link>
+      <pubDate>Fri, 10 Jun 2022 22:17:57 +0800</pubDate>
+      
+      <guid>https://kwazii.top/kids/python/chapter-16/</guid>
+      <description>本节目标 数学运算函数  abs() divmod() max() min() pow() round() sum()  类型转换函数  bool() int() float() str() ord() char() bin() hex() tuple() list() dict() set() enumerate() range() object()  序列操作函数  all() any() filter() map() next() sorted()  对象操作函数  help() dir() type() ascii() format() vars()  交互操作函数  print() input()  文件操作函数  open()  总结回顾 本节介绍了Python的69个内置函数中的最常用的函数。其实我们不必记住全部的内置函数的用法，且不同的Python版本内置函数也会有所不同。只需要知道它们的存在，在使用时去查询文档即可。再次重申一遍，查询文档是学习编程的重要技能，必须熟练掌握。</description>
+    </item>
+    
     <item>
       <title>第十五课 算法</title>
       <link>https://kwazii.top/kids/python/chapter-15/</link>
