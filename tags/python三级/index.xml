@@ -6,7 +6,20 @@
     <description>Recent content in python三级 on Kwazii.top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jun 2022 16:42:37 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/python%E4%B8%89%E7%BA%A7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jun 2022 19:01:44 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/python%E4%B8%89%E7%BA%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第十四课 异常处理</title>
+      <link>https://kwazii.top/kids/python/chapter-14/</link>
+      <pubDate>Fri, 10 Jun 2022 19:01:44 +0800</pubDate>
+      
+      <guid>https://kwazii.top/kids/python/chapter-14/</guid>
+      <description>本节目标 try&amp;hellip;except&amp;hellip;格式 当碰到错误语句，try代码块的剩余代码块会被忽略，except代码块的代码将被执行，示例如下
+try: a = 8 / 0 print(a) except: print(&amp;#34;除数为0的错误&amp;#34;) try&amp;hellip;except&amp;hellip;except&amp;hellip;格式 当碰到错误语句，try代码块的剩余代码块会被忽略。根据错误的具体情况选择except代码块的代码执行，示例如下
+try: a = int(input(&amp;#34;输入一个数&amp;#34;)) b = int(input(&amp;#34;输入另一个数&amp;#34;)) m = a/b print(&amp;#34;商是&amp;#34;,m) except ValueError: print(&amp;#34;输入的不是数字&amp;#34;) except ZeroDivisionError: print(&amp;#34;除数不能为0&amp;#34;) except: print(&amp;#34;其他错误&amp;#34;) try&amp;hellip;except&amp;hellip;else&amp;hellip;finally&amp;hellip;格式 当碰到错误语句，try代码块的剩余代码块会被忽略。执行except代码块，当try代码块没有错误时，try代码块执行完毕，执行else；不管try代码块是否有错误，finally代码块均要执行，示例如下
+try: a = int(input(&amp;#34;输入一个数&amp;#34;)) b = int(input(&amp;#34;输入另一个数&amp;#34;)) m = a/b print(&amp;#34;商是&amp;#34;,m) except: print(&amp;#34;错误&amp;#34;) else: print(&amp;#34;正确&amp;#34;) finally: print(&amp;#34;程序错误&amp;#34;) 总结回顾 本节介绍了Python中的异常处理，异常在程序中是不可避免的，所以应当尽力处理所有的异常情况，以保证程序的健壮性。注意区分错误和异常的区别。
+记住一个原则，当错误不可避免的发生时，应降低错误的影响。</description>
+    </item>
+    
     <item>
       <title>第十三课 数据处理</title>
       <link>https://kwazii.top/kids/python/chapter-13/</link>
