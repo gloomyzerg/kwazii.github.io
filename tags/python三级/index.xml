@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python三级 on Kwazii.top</title>
+    <link>https://kwazii.top/tags/python%E4%B8%89%E7%BA%A7/</link>
+    <description>Recent content in python三级 on Kwazii.top</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Jun 2022 16:42:37 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/python%E4%B8%89%E7%BA%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第十三课 数据处理</title>
+      <link>https://kwazii.top/kids/python/chapter-13/</link>
+      <pubDate>Fri, 10 Jun 2022 16:42:37 +0800</pubDate>
+      
+      <guid>https://kwazii.top/kids/python/chapter-13/</guid>
+      <description>写在前面 程序 = 数据结构 + 算法
+程序无时无刻不在与数据打交道，数据结构是计算机组织、存储数据的方式。
+数据结构：是指数据以及数据元素相互之间的联系。可以看作是相互之间存在着某种特定关系的数据元素的集合。
+因此，可以把数据结构看成是带结构的数据元素的集合。
+数据结构包括如下几个方面：
+ 逻辑结构：数据元素之间的逻辑关系，可以看作一个抽象出来的数据模型。 存储结构：数据元素及其关系在计算机存储器中的存储方式，也称为数据的物理结构，依赖于高级语言实现。 数据运算：施加在该数据上的操作，需要在对应的存储结构中用算法实现。  本节课就从最基础的数据结构开始
+本节目标 一维数据 一维数据由对等关系的有序或无序数据构成，采用线性方式组织，对应数学中的数组的概念。
+任何表现为序列或集合的对象都可以看作一维数据
+在Python中，一维数据主要采用列表形式表示。
+二维数据 二维数据由一组一维数据构成，是一维数据的组合形式，可以用二维列表表示。
+列表的每个元素对应二维数据的一行，这个元素本身也是列表。
+二维数据一般采用相同的数据类型存储数据。
+简单的文件读写   csv格式
+一维数据在存储时，常用分隔符将数据元素分割，用于保存数据的格式。
+常用的分隔符
+ 空格 逗号 其他特殊符号（如；）  CSV格式就是采用逗号分隔元素，它是一种通用的、相对简单的文件格式被广泛应用，Excel，记事本等大部分编辑器支持直接读取或保存CSV格式的文件。CSV文件的扩展名为.csv
+  文件操作
+ open() read() readline() readlines() csv.reader() write() writelines()    总结回顾 本节介绍了两种最基本的数据结构一维数组和二维数组。同时我们第一次将程序中的数据保存下来。csv作为最简单的结构化数据格式有着大量的实际应用。通过将数据保存为csv格式，我们学习了如何用Python来操作文件的读写。所谓文件，本质上都是用来保存特定格式的数据的实体。不同的文件类型只是其中数据的编码和格式不同，我们通过已经进行抽象的文件操作，来读取和写入文件内容，再利用程序对文件的内容进行解析和处理，以达到数据处理的目的。
+本节作业   成绩分析
+请分别写出三个程序实现题目的三个要求
+题目要求：
+  将下表中的数据写入一个名为score.csv的文件
+  读取文件score.csv中的数据，按照成绩进行排序，输出一份成绩排行榜
+  读取文件score.csv中的数据，计算每个班级的平均分，并输出结果
+     班级 姓名 成绩     1 张三 90   2 李四 56   1 王五 96   2 赵六 78   2 开心 99   1 小明 67   2 小强 89   1 果果 77   1 小美 65   2 小呆 60      </description>
+    </item>
+    
+    <item>
+      <title>第十二课 编码与数制</title>
+      <link>https://kwazii.top/kids/python/chapter-12/</link>
+      <pubDate>Fri, 10 Jun 2022 15:38:57 +0800</pubDate>
+      
+      <guid>https://kwazii.top/kids/python/chapter-12/</guid>
+      <description>本节目标 什么是编码 人们通常把用来表示信息的符号组合称为信息代码，而编制代码的过程称为信息编码。
+在计算机中所有的信息都是采用二进制存储的，计算机存储的最小单位是位（bit 比特），每个二进制位只有0和1两种信息。
+十进制与二进制   转换方法
+  bin()
+&amp;gt;&amp;gt;&amp;gt;bin(11) &amp;#39;0b1011&amp;#39; # 以0b开头的数字代码，表示一个二进制数   int()
+&amp;gt;&amp;gt;&amp;gt;int(&amp;#39;0b1011&amp;#39;, 2) 11 &amp;gt;&amp;gt;&amp;gt;int(&amp;#39;1011&amp;#39;, 2) #可以省略0b 11   十进制与八进制   oct()
+&amp;gt;&amp;gt;&amp;gt;oct(143) &amp;#39;0o217&amp;#39; # 以数字0字母o开头 &amp;gt;&amp;gt;&amp;gt;int(&amp;#39;0o217&amp;#39;, 8) 143 &amp;gt;&amp;gt;&amp;gt;int(&amp;#39;217&amp;#39;, 8) #也可以省略0o 143   十进制与十六进制   表示方法
+十六进制数的特点是：有0，1，2，3，4，5，6，7，8，9，A，B，C，D，E，F共16个基本数码
+  hex()
+&amp;gt;&amp;gt;&amp;gt;hex(143) &amp;#39;0x8f&amp;#39; &amp;gt;&amp;gt;&amp;gt;int(&amp;#39;0x8f&amp;#39;, 16) 143 &amp;gt;&amp;gt;&amp;gt;int(&amp;#39;8f&amp;#39;, 8) #也可以省略0x 143   二进制与十六进制   互相转换
+将二进制整数转化为十六进制数的方法：从低位开始4位1组，逐组转换，如果位数不够，左边补0
+相反，将十六进制数转化为二进制数的方法：逐位转换，1位数转为4位二进制数（如果最左边有0，则忽略0）</description>
+    </item>
+    
+  </channel>
+</rss>

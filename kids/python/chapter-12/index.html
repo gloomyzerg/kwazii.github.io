@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    
+    
+    <title>Kwazii.top | 第十二课 编码与数制</title>
+    <style>
+img{ max-width: 80vw; }
+.highlight{ max-width: 80vw; }
+.highlight pre{ font-size: 16px; background-color: #333333 !important; }
+table{border-top: 1px #333 solid;border-left: 1px #333 solid;border-collapse: collapse;}
+th{background-color: #e1e1e1;}
+th,td{border-bottom: 1px #333 solid;border-right: 1px #333 solid;padding:8px;}
+.metadata span{margin-right:16px;}
+</style>
+
+</head>
+<body>
+
+
+<h1>第十二课 编码与数制</h1>
+
+
+  <p class="metadata">
+
+  <span>作者：<a href="/about/">Kwazii</a></span>
+
+
+
+  
+  
+
+  <span>时间：2022-06-10</span>
+
+
+
+
+
+	<br><span class="categories-item">分类：<a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+
+
+</p>
+
+
+
+
+
+<h2>目录</h2>
+<aside>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#本节目标">本节目标</a>
+      <ul>
+        <li><a href="#什么是编码">什么是编码</a></li>
+        <li><a href="#十进制与二进制">十进制与二进制</a></li>
+        <li><a href="#十进制与八进制">十进制与八进制</a></li>
+        <li><a href="#十进制与十六进制">十进制与十六进制</a></li>
+        <li><a href="#二进制与十六进制">二进制与十六进制</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结回顾">总结回顾</a></li>
+  </ul>
+</nav>
+</aside>
+
+
+
+<h2 id="本节目标">本节目标</h2>
+<h3 id="什么是编码">什么是编码</h3>
+<p>人们通常把用来表示信息的符号组合称为信息代码，而编制代码的过程称为信息编码。</p>
+<p>在计算机中所有的信息都是采用二进制存储的，计算机存储的最小单位是位（bit 比特），每个二进制位只有0和1两种信息。</p>
+<h3 id="十进制与二进制">十进制与二进制</h3>
+<ul>
+<li>
+<p>转换方法</p>
+</li>
+<li>
+<p>bin()</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>bin(<span style="color:#ae81ff">11</span>)
+<span style="color:#e6db74">&#39;0b1011&#39;</span> <span style="color:#75715e"># 以0b开头的数字代码，表示一个二进制数</span>
+
+</code></pre></div></li>
+<li>
+<p>int()</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>int(<span style="color:#e6db74">&#39;0b1011&#39;</span>, <span style="color:#ae81ff">2</span>)
+<span style="color:#ae81ff">11</span>
+
+<span style="color:#f92672">&gt;&gt;&gt;</span>int(<span style="color:#e6db74">&#39;1011&#39;</span>, <span style="color:#ae81ff">2</span>) <span style="color:#75715e">#可以省略0b</span>
+<span style="color:#ae81ff">11</span>
+
+</code></pre></div></li>
+</ul>
+<h3 id="十进制与八进制">十进制与八进制</h3>
+<ul>
+<li>
+<p>oct()</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>oct(<span style="color:#ae81ff">143</span>)
+<span style="color:#e6db74">&#39;0o217&#39;</span> <span style="color:#75715e"># 以数字0字母o开头</span>
+
+<span style="color:#f92672">&gt;&gt;&gt;</span>int(<span style="color:#e6db74">&#39;0o217&#39;</span>, <span style="color:#ae81ff">8</span>)
+<span style="color:#ae81ff">143</span>
+
+<span style="color:#f92672">&gt;&gt;&gt;</span>int(<span style="color:#e6db74">&#39;217&#39;</span>, <span style="color:#ae81ff">8</span>) <span style="color:#75715e">#也可以省略0o</span>
+<span style="color:#ae81ff">143</span>
+
+</code></pre></div></li>
+</ul>
+<h3 id="十进制与十六进制">十进制与十六进制</h3>
+<ul>
+<li>
+<p>表示方法</p>
+<p>十六进制数的特点是：有0，1，2，3，4，5，6，7，8，9，A，B，C，D，E，F共16个基本数码</p>
+</li>
+<li>
+<p>hex()</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&gt;&gt;&gt;</span>hex(<span style="color:#ae81ff">143</span>)
+<span style="color:#e6db74">&#39;0x8f&#39;</span>
+
+<span style="color:#f92672">&gt;&gt;&gt;</span>int(<span style="color:#e6db74">&#39;0x8f&#39;</span>, <span style="color:#ae81ff">16</span>)
+<span style="color:#ae81ff">143</span>
+
+<span style="color:#f92672">&gt;&gt;&gt;</span>int(<span style="color:#e6db74">&#39;8f&#39;</span>, <span style="color:#ae81ff">8</span>) <span style="color:#75715e">#也可以省略0x</span>
+<span style="color:#ae81ff">143</span>
+
+</code></pre></div></li>
+</ul>
+<h3 id="二进制与十六进制">二进制与十六进制</h3>
+<ul>
+<li>
+<p>互相转换</p>
+<p>将二进制整数转化为十六进制数的方法：从低位开始4位1组，逐组转换，如果位数不够，左边补0</p>
+<p>相反，将十六进制数转化为二进制数的方法：逐位转换，1位数转为4位二进制数（如果最左边有0，则忽略0）</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+二进制数	<span style="color:#ae81ff">0101</span>	<span style="color:#ae81ff">1101</span>	<span style="color:#ae81ff">1111</span>	<span style="color:#ae81ff">0111</span>
+十六进制	 <span style="color:#ae81ff">5</span>		 D		 F		 <span style="color:#ae81ff">7</span>
+
+
+十六进制	 <span style="color:#ae81ff">5</span>		 D		 F		 <span style="color:#ae81ff">7</span>
+二进制数	<span style="color:#ae81ff">0101</span>	<span style="color:#ae81ff">1101</span>	<span style="color:#ae81ff">1111</span>	<span style="color:#ae81ff">0111</span>
+</code></pre></div></li>
+<li>
+<p>bin()</p>
+</li>
+<li>
+<p>hex()</p>
+</li>
+</ul>
+<h2 id="总结回顾">总结回顾</h2>
+<p>本节介绍了计算机系统中常用的几种数制，其中二进制和十进制是最常用的。由于二进制数的长度不利于书写和表达，且十六进制和二进制有4位一组的对应关系，所以也常用十六进制来表达二进制数。八进制数的实际应用不多，仅在一些古老的系统中有使用，仅作为了解即可。另外我们需要了解各个数制间转换的方法，但通常不需要我们手动去计算转换，能熟练运用Python提供的内置函数进行转换即可。更多关于数制的应用，尤其是二进制的运用，位运算等相关知识已超出入门课程的范畴，可自行去了解。</p>
+
+
+
+正文结束
+<hr>
+
+
+
+  <p><strong>相关分类:</strong></p>
+
+
+  
+  
+  
+  <span class="categories-item"><a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+  
+  
+
+
+
+
+
+
+  <p><strong>相关标签:</strong></p>
+
+
+  
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B">少儿编程</a></span>
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/python">python</a></span>
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/python%E4%B8%89%E7%BA%A7">python三级</a></span>
+  
+  
+
+
+
+
+
+<p><a name="nav-menu" id="nav-menu"><strong>更多内容</strong></a></p>
+
+<ul>
+    
+    <li>
+      <a href="/categories/">
+      
+      按分类
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/">
+      
+      按标签
+      </a>
+    </li>
+    
+    <li>
+      <a href="/about/">
+      
+      关于作者
+      </a>
+    </li>
+    
+    <li>
+      <a href="/">
+      
+      首页
+      </a>
+    </li>
+    
+</ul>
+
+<p><a href="#">回到顶部</a></p>
+</body>
+</html>

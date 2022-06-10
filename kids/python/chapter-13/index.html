@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    
+    
+    <title>Kwazii.top | 第十三课 数据处理</title>
+    <style>
+img{ max-width: 80vw; }
+.highlight{ max-width: 80vw; }
+.highlight pre{ font-size: 16px; background-color: #333333 !important; }
+table{border-top: 1px #333 solid;border-left: 1px #333 solid;border-collapse: collapse;}
+th{background-color: #e1e1e1;}
+th,td{border-bottom: 1px #333 solid;border-right: 1px #333 solid;padding:8px;}
+.metadata span{margin-right:16px;}
+</style>
+
+</head>
+<body>
+
+
+<h1>第十三课 数据处理</h1>
+
+
+  <p class="metadata">
+
+  <span>作者：<a href="/about/">Kwazii</a></span>
+
+
+
+  
+  
+
+  <span>时间：2022-06-10</span>
+
+
+
+
+
+	<br><span class="categories-item">分类：<a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+
+
+</p>
+
+
+
+
+
+<h2>目录</h2>
+<aside>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#写在前面">写在前面</a></li>
+    <li><a href="#本节目标">本节目标</a>
+      <ul>
+        <li><a href="#一维数据">一维数据</a></li>
+        <li><a href="#二维数据">二维数据</a></li>
+        <li><a href="#简单的文件读写">简单的文件读写</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结回顾">总结回顾</a></li>
+    <li><a href="#本节作业">本节作业</a></li>
+  </ul>
+</nav>
+</aside>
+
+
+
+<h2 id="写在前面">写在前面</h2>
+<p>程序 = 数据结构 + 算法</p>
+<p>程序无时无刻不在与数据打交道，数据结构是计算机组织、存储数据的方式。</p>
+<p>数据结构：是指数据以及数据元素相互之间的联系。可以看作是相互之间存在着某种特定关系的数据元素的集合。</p>
+<p>因此，可以把数据结构看成是带结构的数据元素的集合。</p>
+<p>数据结构包括如下几个方面：</p>
+<ul>
+<li>逻辑结构：数据元素之间的逻辑关系，可以看作一个抽象出来的数据模型。</li>
+<li>存储结构：数据元素及其关系在计算机存储器中的存储方式，也称为数据的物理结构，依赖于高级语言实现。</li>
+<li>数据运算：施加在该数据上的操作，需要在对应的存储结构中用算法实现。</li>
+</ul>
+<p>本节课就从最基础的数据结构开始</p>
+<h2 id="本节目标">本节目标</h2>
+<h3 id="一维数据">一维数据</h3>
+<p>一维数据由对等关系的有序或无序数据构成，采用线性方式组织，对应数学中的数组的概念。</p>
+<p>任何表现为序列或集合的对象都可以看作一维数据</p>
+<p>在Python中，一维数据主要采用列表形式表示。</p>
+<h3 id="二维数据">二维数据</h3>
+<p>二维数据由一组一维数据构成，是一维数据的组合形式，可以用二维列表表示。</p>
+<p>列表的每个元素对应二维数据的一行，这个元素本身也是列表。</p>
+<p>二维数据一般采用相同的数据类型存储数据。</p>
+<h3 id="简单的文件读写">简单的文件读写</h3>
+<ol>
+<li>
+<p>csv格式</p>
+<p>一维数据在存储时，常用分隔符将数据元素分割，用于保存数据的格式。</p>
+<p>常用的分隔符</p>
+<ul>
+<li>空格</li>
+<li>逗号</li>
+<li>其他特殊符号（如；）</li>
+</ul>
+<p>CSV格式就是采用逗号分隔元素，它是一种通用的、相对简单的文件格式被广泛应用，Excel，记事本等大部分编辑器支持直接读取或保存CSV格式的文件。CSV文件的扩展名为.csv</p>
+</li>
+<li>
+<p>文件操作</p>
+<ul>
+<li>open()</li>
+<li>read()</li>
+<li>readline()</li>
+<li>readlines()</li>
+<li>csv.reader()</li>
+<li>write()</li>
+<li>writelines()</li>
+</ul>
+</li>
+</ol>
+<h2 id="总结回顾">总结回顾</h2>
+<p>本节介绍了两种最基本的数据结构一维数组和二维数组。同时我们第一次将程序中的数据保存下来。csv作为最简单的结构化数据格式有着大量的实际应用。通过将数据保存为csv格式，我们学习了如何用Python来操作文件的读写。所谓文件，本质上都是用来保存特定格式的数据的实体。不同的文件类型只是其中数据的编码和格式不同，我们通过已经进行抽象的文件操作，来读取和写入文件内容，再利用程序对文件的内容进行解析和处理，以达到数据处理的目的。</p>
+<h2 id="本节作业">本节作业</h2>
+<ol>
+<li>
+<p>成绩分析</p>
+<p>请分别写出三个程序实现题目的三个要求</p>
+<p>题目要求：</p>
+<ul>
+<li>
+<p>将下表中的数据写入一个名为score.csv的文件</p>
+</li>
+<li>
+<p>读取文件score.csv中的数据，按照成绩进行排序，输出一份成绩排行榜</p>
+</li>
+<li>
+<p>读取文件score.csv中的数据，计算每个班级的平均分，并输出结果</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">班级</th>
+<th style="text-align:center">姓名</th>
+<th style="text-align:center">成绩</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:center">张三</td>
+<td style="text-align:center">90</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:center">李四</td>
+<td style="text-align:center">56</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:center">王五</td>
+<td style="text-align:center">96</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:center">赵六</td>
+<td style="text-align:center">78</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:center">开心</td>
+<td style="text-align:center">99</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:center">小明</td>
+<td style="text-align:center">67</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:center">小强</td>
+<td style="text-align:center">89</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:center">果果</td>
+<td style="text-align:center">77</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:center">小美</td>
+<td style="text-align:center">65</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:center">小呆</td>
+<td style="text-align:center">60</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+
+
+
+正文结束
+<hr>
+
+
+
+  <p><strong>相关分类:</strong></p>
+
+
+  
+  
+  
+  <span class="categories-item"><a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+  
+  
+
+
+
+
+
+
+  <p><strong>相关标签:</strong></p>
+
+
+  
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B">少儿编程</a></span>
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/python">python</a></span>
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/python%E4%B8%89%E7%BA%A7">python三级</a></span>
+  
+  
+
+
+
+
+
+<p><a name="nav-menu" id="nav-menu"><strong>更多内容</strong></a></p>
+
+<ul>
+    
+    <li>
+      <a href="/categories/">
+      
+      按分类
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/">
+      
+      按标签
+      </a>
+    </li>
+    
+    <li>
+      <a href="/about/">
+      
+      关于作者
+      </a>
+    </li>
+    
+    <li>
+      <a href="/">
+      
+      首页
+      </a>
+    </li>
+    
+</ul>
+
+<p><a href="#">回到顶部</a></p>
+</body>
+</html>
