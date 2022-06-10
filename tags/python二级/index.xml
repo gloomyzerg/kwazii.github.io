@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kids on Kwazii.top</title>
-    <link>https://kwazii.top/kids/</link>
-    <description>Recent content in Kids on Kwazii.top</description>
+    <title>python二级 on Kwazii.top</title>
+    <link>https://kwazii.top/tags/python%E4%BA%8C%E7%BA%A7/</link>
+    <description>Recent content in python二级 on Kwazii.top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jun 2022 13:40:46 +0800</lastBuildDate><atom:link href="https://kwazii.top/kids/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jun 2022 13:40:46 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/python%E4%BA%8C%E7%BA%A7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>第十一课 计算思维</title>
       <link>https://kwazii.top/kids/python/chapter-11/</link>
@@ -173,88 +173,6 @@ complex
   元组
   当该数据类型的对应变量的值发生改变时，它对应的内存地址也会发生改变（也可以理解为，不可变数据类型一旦被创建，其内存里的数据是不能改变的）
   总结回顾 本节内容非常简短，我们只需要了解一些关于类型的基本概念，在Python中有6种数据类型，数据类型分为可变和不可变两种。更为深入的知识将在后面的课程中一一进行介绍。</description>
-    </item>
-    
-    <item>
-      <title>第四课 turtle库</title>
-      <link>https://kwazii.top/kids/python/chapter-4/</link>
-      <pubDate>Thu, 02 Jun 2022 17:46:09 +0800</pubDate>
-      
-      <guid>https://kwazii.top/kids/python/chapter-4/</guid>
-      <description>写在前面  Python这门语言也被称作“胶水语言”，可用于连接多个小的甚至不兼容的部件，整合不同的库或代码。Python最大的特征就是有非常丰富的库，并且语法简单易懂，因而深受大家的喜爱。那么说到丰富的库，Numpy、Pandas、Matplotlib、TensorFlow、Scrapy等等这些大名鼎鼎的库，在科学计算、自动化、大数据、人工智能等领域发挥着至关重要的作用。虽然这些离我们现在的学习来说可能还比较遥远，但万丈高楼平地起，让我们从最基础的知识开始慢慢来了解Python这门语言，感受它的魅力。
-  废话不多说，我们现在就进入今天这节课，可能是你接触的第一个Python库 turtle。
-  turtle官方文档
- 本节目标 坐标系   画布在屏幕中的坐标系
-画布的（0，0）坐标位于屏幕的左上方。 最小单位为像素。
-setup() 设置画布大小及位置，函数签名：turtle.setup(width, height, startx, starty)
-  画笔在画布中的坐标系
-画笔在画布中的坐标系和画布在屏幕中的坐标系是不一样的，最大的不同是画布的正中心是坐标系的原点（0，0）
-  画笔体系   画笔相关函数
- pen() pensize() penup() pendown() hideturtle() showturtle() shape() write()    与颜色相关的函数
- pencolor() color() fillcolor() begin_fill() end_fill() bgcolor()    运动体系   turtle的相对方向
- 小海龟（画笔）在画布上是有方向的，默认的小海龟的头部是朝向画布的右方。 小海龟（画笔）的方向会随着画笔方向的改变进行改变。    turtle的绝对方向
-  绝对方向是不变的</description>
-    </item>
-    
-    <item>
-      <title>第三课 运算符</title>
-      <link>https://kwazii.top/kids/python/chapter-3/</link>
-      <pubDate>Wed, 01 Jun 2022 18:29:26 +0800</pubDate>
-      
-      <guid>https://kwazii.top/kids/python/chapter-3/</guid>
-      <description>本节目标 算数运算符 与数学运算符的比较
-   名称 数学 Python 作用     加 + + 把两个对象相加，或拼接字符串   减 - - 把两个对象相减   乘 X * 把两个数相乘，或是放回一个被重复若干次的字符串   除 ➗ / 把两个对象相除，商是小数（能整除也保留一位小数）   取整除  // 取两个数相除的商（整数部分）   取模  % 取两个数相除的余数   幂  ** 取x的n次方    重点：
-  其中的加和乘可用于字符串类型的运算
-  取整除（//）是向下取整，不是四舍五入, 例如24//5的结果是4，而不是5
-  取模（%）如果能整除，则取模的结果为0
-  赋值运算符    运算符 描述 例子 作用     = 赋值运算符 a = 5 把5赋值给变量a   += 加法赋值运算符 a += b 相当于a = a + b   -= 减法赋值运算符 a -= b 相当于a = a - b   *= 乘法赋值运算符 a *= b 相当于a = a * b   /= 除法赋值运算符 a /= b 相当于a = a / b   %= 取模赋值运算符 a %= b 相当于a = a % b   **= 幂赋值运算符 a **= b 相当于a = a ** b   //= 取整除赋值运算符 a //= b 相当于a = a // b    除了 = 运算符，剩余的运算符都是相应的简写模式</description>
-    </item>
-    
-    <item>
-      <title>第二课 编程基础</title>
-      <link>https://kwazii.top/kids/python/chapter-2/</link>
-      <pubDate>Wed, 01 Jun 2022 01:25:57 +0800</pubDate>
-      
-      <guid>https://kwazii.top/kids/python/chapter-2/</guid>
-      <description>本节目标 print()函数   作用：打印输出，在屏幕上显示出要打印的信息
-  用法
- 打印字符串  &amp;gt;&amp;gt;&amp;gt;print(&amp;#34;hello&amp;#34;) hello  打印数字  &amp;gt;&amp;gt;&amp;gt;print(4+6) 10  打印变量  &amp;gt;&amp;gt;&amp;gt;coding = &amp;#34;Python3&amp;#34; &amp;gt;&amp;gt;&amp;gt;print(coding) Python3  输出多个内容  &amp;gt;&amp;gt;&amp;gt;a = &amp;#34;hello&amp;#34; &amp;gt;&amp;gt;&amp;gt;b = &amp;#34;world&amp;#34; &amp;gt;&amp;gt;&amp;gt;print(a, b) # 注意单词之间有空格 hello world  换行  &amp;gt;&amp;gt;&amp;gt;print(&amp;#34;你好&amp;#34;, end =&amp;#34;,&amp;#34;) &amp;gt;&amp;gt;&amp;gt;print(&amp;#34;kwazii&amp;#34;) # 运行结果 你好,kwazii  多行输出  &amp;gt;&amp;gt;&amp;gt;print(&amp;#39;&amp;#39;&amp;#39; 第一行 第二行 第三行 &amp;#39;&amp;#39;&amp;#39;) 第一行 第二行 第三行  转义符  &amp;gt;&amp;gt;&amp;gt;print(&amp;#39;I\&amp;#39;m Kwazii&amp;#39;) I&amp;#39;m Kwazii   关于引号，单引号和双引号，三引号   所有引号必须是英文半角引号</description>
-    </item>
-    
-    <item>
-      <title>第一课 编程环境搭建</title>
-      <link>https://kwazii.top/kids/python/chapter-1/</link>
-      <pubDate>Tue, 31 May 2022 14:18:57 +0800</pubDate>
-      
-      <guid>https://kwazii.top/kids/python/chapter-1/</guid>
-      <description>课前准备 搭建Python编程环境   下载Python 在电脑浏览器中打开Python官网https://www.python.org/
-点击下图中红框中按钮即可现在最新的python安装包 (由于使用的操作系统不同，页面显示可能不完全一致，Python的版本也可能和图中不一致，此课程当前使用的版本为3.10.4，但不影响此课程学习。)
-  安装Python
-双击刚才下载的安装包进行安装，如图所示
-打开安装包后会看到此窗口，注意先勾选下方红框Add Python 3.10 to PATH，然后点击上方红框Install Now进行安装
-耐心等待，看到如下图的提示说明安装完成，点击close关闭即可
-  打开并检查Python是否安装成功
-完成上述步骤之后，在键盘上按win+r键打开运行，输入cmd，点击确定，如下图所示
-将会打开命令行窗口，输入python回车，如果看到如下图显示则说明pyhton已安装成功
-接下来我们找到启动python的入口
-以windows系统为例，点击桌面左下方开始图标，在其中找到Python文件夹，点击其中IDLE，你将会看到Python IDLE窗口，如下图
-到此Python编程环境的安装就已经全部完成了，再次说明由于操作系统或安装日期的不同，所显示的内容可能不完全和以上图中一致。但只要流程相同均不影响此课程的学习。
-（因考虑普遍需求，以上操作均已windows操作系统为例。之后本课程的演示均为MacOS系统，如无特殊说明操作流程一致。）
-如安装遇到问题，可以联系我。
-下面我们正式开始Python课程的学习。祝你好运！
-  本节目标 了解Python的集成开发环境（IDE）   什么是集成开发环境
-集成开发环境简称IDE（Integrated Development Environment），是用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。集成了代码编写功能、分析功能、编译功能、调试功能等一体化的开发软件服务套件。在我们课前准备中，我们已经完成了Python的安装。Python安装之后会自带一个名为IDLE的集成开发环境。
-  Python可用的IDE有那些
-除了Python自带的IDLE之外，常用的IDE和编辑器还有很多。例如VSCode，pycharm， Jupyter Notebook等等。初学者不必纠结使用何种工具，专注于代码本身更为重要。
-  掌握IDLE的两种模式   IDLE的两种模式
-为了简化开发的复杂性，初学者不必纠结使用的工具。因此对于我们初学者来说使用Python自带的IDLE足以完成我们的学习。
-使用IDLE进行Python开发，首先我们要了解的是IDLE的两种模式。即脚本模式（又称为编辑器模式）和交互模式（又称为Shell模式）
-这两种模式的界面如下图, 左边👈为脚本模式，右边👉为交互模式
-  IDLE两种模式的切换方法
-切换方法：新建文件即可。
-交互模式的提示符是 &amp;gt; &amp;gt; &amp;gt;，脚本模式没有提示符。
-  IDLE的基本操作和常用快捷键
- 新建文件 打开文件 保存文件 运行（脚本） 替换 退出交互模式 &amp;hellip;  基本的操作是我们每天的编程中最常用的功能，熟练掌握他们的快捷键可以大大提高我们的效率。（注意不同操作系统快捷键不尽相同）</description>
     </item>
     
   </channel>

@@ -6,9 +6,37 @@
     <description>Recent content in python on Kwazii.top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jun 2022 00:51:45 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jun 2022 13:40:46 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>第二章 第10节 流程控制</title>
+      <title>第十一课 计算思维</title>
+      <link>https://kwazii.top/kids/python/chapter-11/</link>
+      <pubDate>Fri, 10 Jun 2022 13:40:46 +0800</pubDate>
+      
+      <guid>https://kwazii.top/kids/python/chapter-11/</guid>
+      <description>写在前面 在此之前，我们学习了很多Python的基础理论知识，但或许我们有一个困惑，就是它们究竟有什么用。那么从本节开始，我们将要解决一些编程的实际问题。
+本节目标 写一点真实的程序   剔除数字
+  用户随意输入一段可能包含数字和字母的字符串
+  删除字符串中的数字，然后输出一串没有数字的字符串
+  输出的非数字的字符顺序不变
+    数字转汉字
+  用户输入一个1-9的任意数字，输出对应的汉字
+  用户可重复输入数字，程序不退出
+    求质数
+ 提示用户输入两个正整数，求出两个数之间的所有质数    总结回顾 首先，恭喜你熬出头了，终于写出了一些看起来有实际意义的应用程序了。
+本节通过三个真实的需求，将之前课程中的知识灵活运用、组合出一段代码。虽然这些代码看起来还很简单，但你要明白再复杂的程序，都是通过这些看似简单的功能点，一点点堆叠起来的。
+编程的过程就是把一个复杂的问题拆解为一个个简单的问题并实现它。随着学习的深入，我们能解决越来越多的“简单问题”，并最终构建一个“复杂”的应用程序。
+本节作业   出租车计价器
+题目要求：
+提示用户输入一个数字作为里程数（公里数）， 计算出称作出租车应该支付的费用
+计算方式如下：
+  3公里以内起步价10元
+  超过3公里的部分，每公里2元
+  超过12公里的，超过部分每公里加收50%的空驶费
+    </description>
+    </item>
+    
+    <item>
+      <title>第十课 流程控制</title>
       <link>https://kwazii.top/kids/python/chapter-10/</link>
       <pubDate>Fri, 10 Jun 2022 00:51:45 +0800</pubDate>
       
@@ -37,7 +65,7 @@ a = 10 if a &amp;gt; 0: print(&amp;#39;a为整数&amp;#39;) else: print(&amp;#39
     </item>
     
     <item>
-      <title>第二章 第9课 字典</title>
+      <title>第九课 字典</title>
       <link>https://kwazii.top/kids/python/chapter-9/</link>
       <pubDate>Thu, 09 Jun 2022 10:12:14 +0800</pubDate>
       
@@ -58,7 +86,7 @@ a = 10 if a &amp;gt; 0: print(&amp;#39;a为整数&amp;#39;) else: print(&amp;#39
     </item>
     
     <item>
-      <title>第二章 第8课 字符串</title>
+      <title>第八课 字符串</title>
       <link>https://kwazii.top/kids/python/chapter-8/</link>
       <pubDate>Thu, 09 Jun 2022 03:15:39 +0800</pubDate>
       
@@ -74,7 +102,7 @@ a = 10 if a &amp;gt; 0: print(&amp;#39;a为整数&amp;#39;) else: print(&amp;#39
     </item>
     
     <item>
-      <title>第二章 第7课 不可变序列-元组</title>
+      <title>第七课 不可变序列-元组</title>
       <link>https://kwazii.top/kids/python/chapter-7/</link>
       <pubDate>Thu, 09 Jun 2022 02:31:05 +0800</pubDate>
       
@@ -91,7 +119,7 @@ a = 10 if a &amp;gt; 0: print(&amp;#39;a为整数&amp;#39;) else: print(&amp;#39
     </item>
     
     <item>
-      <title>第二章 第6课 可变序列-列表</title>
+      <title>第六课 可变序列-列表</title>
       <link>https://kwazii.top/kids/python/chapter-6/</link>
       <pubDate>Mon, 06 Jun 2022 22:29:46 +0800</pubDate>
       
@@ -117,7 +145,7 @@ Python中常见的序列有列表，元组，字符串，range对象，二进制
     </item>
     
     <item>
-      <title>第二章 第5课 基本数据类型</title>
+      <title>第五课 基本数据类型</title>
       <link>https://kwazii.top/kids/python/chapter-5/</link>
       <pubDate>Mon, 06 Jun 2022 22:14:57 +0800</pubDate>
       
@@ -148,7 +176,7 @@ complex
     </item>
     
     <item>
-      <title>第一章 第4节 turtle库</title>
+      <title>第四课 turtle库</title>
       <link>https://kwazii.top/kids/python/chapter-4/</link>
       <pubDate>Thu, 02 Jun 2022 17:46:09 +0800</pubDate>
       
@@ -169,7 +197,7 @@ setup() 设置画布大小及位置，函数签名：turtle.setup(width, height,
     </item>
     
     <item>
-      <title>第一章 第3课 运算符</title>
+      <title>第三课 运算符</title>
       <link>https://kwazii.top/kids/python/chapter-3/</link>
       <pubDate>Wed, 01 Jun 2022 18:29:26 +0800</pubDate>
       
@@ -183,7 +211,7 @@ setup() 设置画布大小及位置，函数签名：turtle.setup(width, height,
     </item>
     
     <item>
-      <title>第一章 第2课 编程基础</title>
+      <title>第二课 编程基础</title>
       <link>https://kwazii.top/kids/python/chapter-2/</link>
       <pubDate>Wed, 01 Jun 2022 01:25:57 +0800</pubDate>
       
@@ -194,7 +222,7 @@ setup() 设置画布大小及位置，函数签名：turtle.setup(width, height,
     </item>
     
     <item>
-      <title>第一章 第1课 编程环境搭建</title>
+      <title>第一课 编程环境搭建</title>
       <link>https://kwazii.top/kids/python/chapter-1/</link>
       <pubDate>Tue, 31 May 2022 14:18:57 +0800</pubDate>
       
