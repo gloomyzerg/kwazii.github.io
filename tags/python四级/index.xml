@@ -6,7 +6,26 @@
     <description>Recent content in python四级 on Kwazii.top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jun 2022 09:13:27 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/python%E5%9B%9B%E7%BA%A7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jun 2022 13:51:09 +0800</lastBuildDate><atom:link href="https://kwazii.top/tags/python%E5%9B%9B%E7%BA%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第十八课 自定义函数的创建与调用</title>
+      <link>https://kwazii.top/kids/python/chapter-18/</link>
+      <pubDate>Sun, 12 Jun 2022 13:51:09 +0800</pubDate>
+      
+      <guid>https://kwazii.top/kids/python/chapter-18/</guid>
+      <description>本节目标 函数的返回值 即函数里代码的执行结果，将其返回给函数调用者。在Python中函数的返回值是可选的，利用return关键字返回函数的结果，函数的返回值可以是任何类型。当一组数据通过函数处理后得到另一组数据的情况时，我们就可以利用函数的返回值。它可以表示函数计算的结果，有时也可以用返回值表示函数处理的状态。总之，函数的返回值就是函数希望返回给调用者的数据。
+def sum(a, b): return a+b result = sum(1,2) print(result) 3 全局变量和局部变量   函数外部定义的变量为全局变量。
+  函数内部定义的变量为局部变量。
+  局部变量的作用域仅在函数内部。
+  当函数运行时，会先找局部变量，再找全局变量。
+  global关键字：把一个局部变量转换为全局变量
+  nonlocal关键字：使用外层的非全局变量
+  为函数的参数和返回值指定类型 Python是动态类型语言，定义变量时不需要声明与指定类型，自定义函数的参数也是如此。
+但在Python3.5之后的版本新增了对函数参数和返回值的类型指定，定义变量时也可以指定类型。
+def f(a:int, b:str)-&amp;gt; str: c = a*b print(f) return f f(3, &amp;#34;kwazii&amp;#34;) 需要注意的是默认的Python解析器是不会检查这些类型的，这些类型声明只起到提示作用。
+总结回顾 通过和上一节结合，这两节内容完整的介绍了Python中函数的声明与用法。函数是编程中非常重要的概念，现代编程离不开函数。函数是对一段代码（或算法）的封装。有了函数我们才可以更好的组织代码。利用函数可大大提高代码的可读性和可维护性，使我们阅读和修改代码变的更容易。虽然编程语言是一种与计算机打交道的语言，但使用编程语言背后的依然是人。在工程实践中，代码的可读性和可维护性的意义非常重要，甚至要远远大于编辑效率。高质量的代码总是容易阅读和修改的，因为这个世界唯一不变的就是变化本身。</description>
+    </item>
+    
     <item>
       <title>第十七课 函数的相关概念</title>
       <link>https://kwazii.top/kids/python/chapter-17/</link>
