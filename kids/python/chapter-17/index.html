@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    
+    
+    <title>Kwazii.top | 第十七课 函数的相关概念</title>
+    <style>
+img{ max-width: 80vw; }
+.highlight{ max-width: 80vw; }
+.highlight pre{ font-size: 16px; background-color: #333333 !important; }
+table{border-top: 1px #333 solid;border-left: 1px #333 solid;border-collapse: collapse;}
+th{background-color: #e1e1e1;}
+th,td{border-bottom: 1px #333 solid;border-right: 1px #333 solid;padding:8px;}
+.metadata span{margin-right:16px;}
+</style>
+
+</head>
+<body>
+
+
+<h1>第十七课 函数的相关概念</h1>
+
+
+  <p class="metadata">
+
+  <span>作者：<a href="/about/">Kwazii</a></span>
+
+
+
+  
+  
+
+  <span>时间：2022-06-11</span>
+
+
+
+
+
+	<br><span class="categories-item">分类：<a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+
+
+</p>
+
+
+
+
+
+<h2>目录</h2>
+<aside>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#本节目标">本节目标</a>
+      <ul>
+        <li><a href="#函数的意义">函数的意义</a></li>
+        <li><a href="#形参和实参">形参和实参</a></li>
+        <li><a href="#匿名函数">匿名函数</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结回顾">总结回顾</a></li>
+  </ul>
+</nav>
+</aside>
+
+
+
+<h2 id="本节目标">本节目标</h2>
+<h3 id="函数的意义">函数的意义</h3>
+<p>在写一段程序的时候，可能需要多次用到同样的功能，如果每次都要重复写相同的代码，不仅会增加代码量，而且阅读与修改极不方便。如果把实现相同功能的代码作为一个代码块封装在一起，形成一个函数，每次需要时调用这个函数，就很方便了。</p>
+<p>定义函数的代码如下所示：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello</span>():  <span style="color:#75715e">#def 关键字后面假函数名定义函数</span>
+	print(<span style="color:#e6db74">&#34;Hello World&#34;</span>) <span style="color:#75715e">#函数体</span>
+
+hello() <span style="color:#75715e">#调用函数</span>
+
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello</span>(name):
+	print(<span style="color:#e6db74">&#34;Hello &#34;</span><span style="color:#f92672">+</span>name)
+
+hello(<span style="color:#e6db74">&#39;Kwazii&#39;</span>)
+
+</code></pre></div><h3 id="形参和实参">形参和实参</h3>
+<p>形参是一种形式上或意义上的参数，在定义函数时起到占位的作用。</p>
+<p>实参是在函数调用时传入的实际参数，它会赋值给形参运行。</p>
+<ol>
+<li>位置参数</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">f</span>(x,y,z):
+	print(x,y,z)
+
+f(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>)
+
+<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>
+
+</code></pre></div><ol start="2">
+<li>关键字参数</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">f</span>(x,y,z):
+	print(x,y,z)
+
+f(y<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>,z<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>,x<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+
+<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>
+
+</code></pre></div><ol start="3">
+<li>参数默认值</li>
+</ol>
+<p>定义函数时，可以指定参数的默认值，调用函数时如果没有传对应的参数，则使用默认值</p>
+<p>带默认值的参数必须定义在最后（在带默认值的参数后面不能再定义不带默认值的参数）</p>
+<ol start="4">
+<li>可变长参数</li>
+</ol>
+<p>当不确定需要传入的值有多少个时，在定义形参时可以使用*args、**kwargs来表示。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">f</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+	print(args)
+	print(kwargs)
+
+f(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>)
+
+f(<span style="color:#f92672">*</span>[<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>])
+
+f(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,x<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,y<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>,z<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+
+f(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,<span style="color:#f92672">**</span>{<span style="color:#e6db74">&#34;x&#34;</span>:<span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;y&#34;</span>:<span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;z&#34;</span>:<span style="color:#ae81ff">3</span>})
+
+</code></pre></div><h3 id="匿名函数">匿名函数</h3>
+<p>lambda</p>
+<h2 id="总结回顾">总结回顾</h2>
+<p>本节介绍了Python中函数的基本概念，重要的是函数的参数概念。Python中函数有位置参数和关键词参数两种传参形式，这和其他编程语言有所不同。位置参数和关键词是可以混用的。还有可变长参数，我们在某些时候也会用到它。</p>
+
+
+
+正文结束
+<hr>
+
+
+
+  <p><strong>相关分类:</strong></p>
+
+
+  
+  
+  
+  <span class="categories-item"><a href="https://kwazii.top/categories/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8Bpython">少儿编程python</a></span>
+  
+  
+
+
+
+
+
+
+  <p><strong>相关标签:</strong></p>
+
+
+  
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B">少儿编程</a></span>
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/python">python</a></span>
+  
+  
+  <span class="tags-item"><a href="https://kwazii.top/tags/python%E5%9B%9B%E7%BA%A7">python四级</a></span>
+  
+  
+
+
+
+
+
+<p><a name="nav-menu" id="nav-menu"><strong>更多内容</strong></a></p>
+
+<ul>
+    
+    <li>
+      <a href="/categories/">
+      
+      按分类
+      </a>
+    </li>
+    
+    <li>
+      <a href="/tags/">
+      
+      按标签
+      </a>
+    </li>
+    
+    <li>
+      <a href="/about/">
+      
+      关于作者
+      </a>
+    </li>
+    
+    <li>
+      <a href="/">
+      
+      首页
+      </a>
+    </li>
+    
+</ul>
+
+<p><a href="#">回到顶部</a></p>
+</body>
+</html>

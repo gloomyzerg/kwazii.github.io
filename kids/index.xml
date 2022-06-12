@@ -6,7 +6,24 @@
     <description>Recent content in Kids on Kwazii.top</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jun 2022 22:17:57 +0800</lastBuildDate><atom:link href="https://kwazii.top/kids/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Jun 2022 09:13:27 +0800</lastBuildDate><atom:link href="https://kwazii.top/kids/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第十七课 函数的相关概念</title>
+      <link>https://kwazii.top/kids/python/chapter-17/</link>
+      <pubDate>Sat, 11 Jun 2022 09:13:27 +0800</pubDate>
+      
+      <guid>https://kwazii.top/kids/python/chapter-17/</guid>
+      <description>本节目标 函数的意义 在写一段程序的时候，可能需要多次用到同样的功能，如果每次都要重复写相同的代码，不仅会增加代码量，而且阅读与修改极不方便。如果把实现相同功能的代码作为一个代码块封装在一起，形成一个函数，每次需要时调用这个函数，就很方便了。
+定义函数的代码如下所示：
+def hello(): #def 关键字后面假函数名定义函数 print(&amp;#34;Hello World&amp;#34;) #函数体 hello() #调用函数 def hello(name): print(&amp;#34;Hello &amp;#34;+name) hello(&amp;#39;Kwazii&amp;#39;) 形参和实参 形参是一种形式上或意义上的参数，在定义函数时起到占位的作用。
+实参是在函数调用时传入的实际参数，它会赋值给形参运行。
+ 位置参数  def f(x,y,z): print(x,y,z) f(1,2,3) 1 2 3 关键字参数  def f(x,y,z): print(x,y,z) f(y=2,z=3,x=1) 1 2 3 参数默认值  定义函数时，可以指定参数的默认值，调用函数时如果没有传对应的参数，则使用默认值
+带默认值的参数必须定义在最后（在带默认值的参数后面不能再定义不带默认值的参数）
+可变长参数  当不确定需要传入的值有多少个时，在定义形参时可以使用*args、**kwargs来表示。
+def f(*args, **kwargs): print(args) print(kwargs) f(1,2,3,4,5,6) f(*[1,2,3,4,5,6]) f(1,2,3,4,5,6,x=1,y=2,z=3) f(1,2,3,4,5,6,**{&amp;#34;x&amp;#34;:1, &amp;#34;y&amp;#34;:2, &amp;#34;z&amp;#34;:3}) 匿名函数 lambda
+总结回顾 本节介绍了Python中函数的基本概念，重要的是函数的参数概念。Python中函数有位置参数和关键词参数两种传参形式，这和其他编程语言有所不同。位置参数和关键词是可以混用的。还有可变长参数，我们在某些时候也会用到它。</description>
+    </item>
+    
     <item>
       <title>第十六课 核心函数</title>
       <link>https://kwazii.top/kids/python/chapter-16/</link>
