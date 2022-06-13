@@ -27,7 +27,7 @@ setup() 设置画布大小及位置，函数签名：turtle.setup(width, height,
   绝对方向的划分，以屏幕右方为0度的起点，沿x轴逆时针转动，如下图所示
     相关函数
  goto() forward() backward() left() right() setheading() speed() home() dot() circle()    画笔体系   画笔相关函数
- pensize() penup() pendown() hideturtle() showturtle() shape() write()    与颜色相关的函数</description>
+ Pen() pensize() penup() pendown() hideturtle() showturtle() shape() write()    与颜色相关的函数</description>
     </item>
     
     <item>
