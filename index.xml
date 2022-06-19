@@ -190,11 +190,11 @@ try: a = int(input(&amp;#34;输入一个数&amp;#34;)) b = int(input(&amp;#34;�
   条件成立时运行的语句块必须缩进。
   不在条件语句执行模块里面的后续语句不能缩进，必须和if条件语句保持同一缩进。
   前面语句 if 条件表达式: 语句1 语句2 ... 语句n 后续语句 例子：
-a = 10 if a &amp;gt; 0: print(&amp;#39;a为整数&amp;#39;) print(&amp;#39;程序结束&amp;#39;)   二分支结构
+a = 10 if a &amp;gt; 0: print(&amp;#39;a为正数&amp;#39;) print(&amp;#39;程序结束&amp;#39;)   二分支结构
 二分支结构，也有一个if语句，但和单分支结构不同的是，二分支结构有条件成立和条件不成立两种情况。
 二分支结构流程图，如下
 例子：
-a = 10 if a &amp;gt; 0: print(&amp;#39;a为整数&amp;#39;) else: print(&amp;#39;a为0或者负数&amp;#39;) print(&amp;#39;程序结束&amp;#39;) 二分支结构，其格式为if&amp;hellip;else&amp;hellip;
+a = 10 if a &amp;gt; 0: print(&amp;#39;a为正数&amp;#39;) else: print(&amp;#39;a为0或者负数&amp;#39;) print(&amp;#39;程序结束&amp;#39;) 二分支结构，其格式为if&amp;hellip;else&amp;hellip;
   多分支结构</description>
     </item>
     
@@ -208,15 +208,13 @@ a = 10 if a &amp;gt; 0: print(&amp;#39;a为整数&amp;#39;) else: print(&amp;#39
 字典由多个键值对组成，每个元素都分为键和值两部分。
 键是字典中进行读取及赋值的重要标记，要求有唯一性，通常为整数或字符串；
 值可以是任意类型，不要求唯一性
-字典的创建 字典的创建有多种方式，最常用的两种
-  {&amp;lsquo;apple&amp;rsquo;: 8, &amp;lsquo;banana&amp;rsquo;:4.5}
-  dict()
-  访问字典里的值 由于字典没有索引，所以我们不能使用索引的方法来访问字典
+字典的创建 字典的创建方式
+ {&amp;lsquo;apple&amp;rsquo;: 8, &amp;lsquo;banana&amp;rsquo;:4.5}  访问字典里的值 由于字典没有索引，所以我们不能使用索引的方法来访问字典
   使用字典名加键进行访问
 &amp;gt;&amp;gt;&amp;gt;d = {&amp;#39;apple&amp;#39;: 8, &amp;#39;banana&amp;#39;: 4.5} &amp;gt;&amp;gt;&amp;gt;print(d[&amp;#39;apple&amp;#39;]) 8   使用字典中的get()函数进行访问
 &amp;gt;&amp;gt;&amp;gt;d = {&amp;#39;apple&amp;#39;: 8, &amp;#39;banana&amp;#39;: 4.5} &amp;gt;&amp;gt;&amp;gt;print(d.get(&amp;#39;apple&amp;#39;)) 8   修改字典   修改已有的键的值
 &amp;gt;&amp;gt;&amp;gt;d = {&amp;#39;apple&amp;#39;: 8, &amp;#39;banana&amp;#39;: 4.5} &amp;gt;&amp;gt;&amp;gt;d[&amp;#39;banana&amp;#39;] = 4   给字典添加新的键值对
-&amp;gt;&amp;gt;&amp;gt;d = {&amp;#39;apple&amp;#39;: 8, &amp;#39;banana&amp;#39;: 4.5} &amp;gt;&amp;gt;&amp;gt;d[&amp;#39;pear&amp;#39;] = 6 &amp;gt;&amp;gt;&amp;gt;print(d) {&amp;#39;apple&amp;#39;: 8, &amp;#39;banana&amp;#39;: 4.</description>
+&amp;gt;&amp;gt;&amp;gt;d = {&amp;#39;apple&amp;#39;: 8, &amp;#39;banana&amp;#39;: 4.5} &amp;gt;&amp;gt;&amp;gt;d[&amp;#39;pear&amp;#39;] = 6 &amp;gt;&amp;gt;&amp;gt;print(d) {&amp;#39;apple&amp;#39;: 8, &amp;#39;banana&amp;#39;: 4.5, &amp;#39;pear&amp;#39;: 6}   删除字典里已有的键值对</description>
     </item>
     
     <item>
@@ -232,7 +230,7 @@ a = 10 if a &amp;gt; 0: print(&amp;#39;a为整数&amp;#39;) else: print(&amp;#39
 为了输出一些特殊的字符，比如引号、缩进、换行等，在大部分编程语言的字符串中都有转义字符。
 转义字符由反斜杠 \ 开头
 常用的转义字符如下：
-   转义符 描述     \ 反斜杠（\）   &#39; 单引号（&#39;）   &amp;quot; 双引号（&amp;quot;）   \n 换行符（LF）   \r 回车符（CR）   \t 水平制表符（TAB）      格式化输出</description>
+   转义符 描述     \\ 反斜杠（\）   \&#39; 单引号（&#39;）   \&amp;quot; 双引号（&amp;quot;）   \n 换行符（LF）   \r 回车符（CR）   \t 水平制表符（TAB）      格式化输出</description>
     </item>
     
     <item>
