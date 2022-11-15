@@ -1,0 +1,15 @@
+html, body{max-height:100%; max-width:100%; overflow: hidden; padding:0; margin: 0;}
+body { text-align: center; }
+.date { font-size: 40px; margin-top: 50px; height: 56px;}
+.time { font-size: 180px; margin-top: 50px; }
+.time .split { font-size: 120px; position: relative; bottom: 30px; margin: -30px; }
+.info span { width: 20px; height: 20px; margin: 10px; display: inline-block; border-radius: 50%; border: 2px solid #000; }
+.info span.complete { background-color: #000; }
+.operation { font-size: 40px; position: fixed; bottom: 40px; width: 100%; }
+.operation button { padding: 20px 30px; background-color: transparent; border: none; outline: none; }
+.operation .main { border: 1px solid #000; border-radius: 30px; font-size: 60px; margin: 0 30px; }
+.operation .state { background-color: #000; color: #fff; }
+
+body.dark{ background-color:#000; color:#fff}
+.dark .operation button{color: #fff}
+.dark .operation .state{background-color: #fff; color: #000;}
